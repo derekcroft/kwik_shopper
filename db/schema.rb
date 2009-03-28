@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20090328193954) do
   create_table "items", :force => true do |t|
     t.float    "price"
     t.integer  "category_id"
+    t.integer  "aisle_id"
     t.string   "description"
     t.string   "unit_of_measure"
     t.datetime "created_at"
