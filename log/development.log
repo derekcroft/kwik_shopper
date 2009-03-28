@@ -10,3 +10,46 @@ DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with R
   [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
   [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_migrations[0m
   [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library will be REMOVED FROM RAILS 2.2. Please switch to the offical mysql gem: `gem install mysql`  See http://www.rubyonrails.org/deprecation for details. (called from mysql_connection at c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:81)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;35;1mSQL (0.156000)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;35;1mSQL (0.109000)[0m   [0mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.032000)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `category_id` int(11), `aisle_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;35;1mSQL (0.125000)[0m   [0mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;35;1mSQL (0.125000)[0m   [0mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+  [4;35;1mSQL (0.015000)[0m   [0mdescribe `aisles`[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSHOW KEYS FROM `aisles`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.015000)[0m   [0;1mdescribe `carts`[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSHOW KEYS FROM `carts`[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (0.015000)[0m   [0mdescribe `categories`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM `categories`[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (0.015000)[0m   [0;1mdescribe `items`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW KEYS FROM `items`[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mdescribe `stores`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM `stores`[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.015000)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSHOW KEYS FROM `users`[0m
