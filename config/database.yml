@@ -17,8 +17,8 @@
 development:
   adapter: mysql
   database: kwik_shopper_development
-  username: kwik_shopper
-  password: swd09
+  username: root
+  password: homoerectus
   host: 127.0.0.1
 
 # Warning: The database defined as "test" will be erased and
@@ -27,14 +27,14 @@ development:
 test:
   adapter: mysql
   database: kwik_shopper_test
-  username: kwik_shopper
-  password: swd09
+  username: root
+  password: homoerectus
   host: 127.0.0.1
 
 production:
   adapter: mysql
   database: kwik_shopper_production
-  username: kwik_shopper
-  password: swd09
+  username: root
+  password: homoerectus
   host: 127.0.0.1
 
