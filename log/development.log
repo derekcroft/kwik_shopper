@@ -151,3 +151,101 @@ Migrating to CreateStores (20090328193954)
   [4;36;1mSQL (0.001794)[0m   [0;1mSHOW FIELDS FROM `users`[0m
   [4;35;1mSQL (0.055508)[0m   [0mdescribe `users`[0m
   [4;36;1mSQL (0.007987)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.055361)[0m   [0mDROP DATABASE IF EXISTS `kwik_shopper_development`[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000265)[0m   [0mCREATE DATABASE `kwik_shopper_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000304)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.006272)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.006539)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000490)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000620)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (0.029594)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000787)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (0.003770)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000777)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (0.032853)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `aisle_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000965)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (0.018409)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` int(11), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000733)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (0.003328)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000763)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (0.022905)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001124)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;36;1mSQL (0.001560)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001230)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000661)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001925)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.001774)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.000857)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.001628)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.001146)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.000739)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.001643)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.002263)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.001171)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.002303)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.001797)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.000679)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (0.001754)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.001740)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.001657)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.001618)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.065347)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.008682)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.068562)[0m   [0mDROP DATABASE IF EXISTS `kwik_shopper_development`[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000282)[0m   [0mCREATE DATABASE `kwik_shopper_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000218)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000465)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.007210)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.019601)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000469)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000666)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (0.003381)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000817)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (0.030251)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000724)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (0.004106)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000795)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (0.011288)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` int(11), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000761)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (0.017733)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000894)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (0.017406)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000740)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;36;1mSQL (0.000956)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000555)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000631)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001857)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.002424)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.000794)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.001865)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.001609)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.000742)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.001593)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.001469)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.000687)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.001715)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.001612)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.000930)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (0.002350)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.002606)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.000762)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.001783)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.066884)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.011363)[0m   [0;1mSHOW KEYS FROM `users`[0m
