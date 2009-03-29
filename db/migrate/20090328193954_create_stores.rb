@@ -1,7 +1,7 @@
 class CreateStores < ActiveRecord::Migration
   def self.up
     create_table :stores do |t|
-    t.string :name
+    t.string :name, :description
     t.integer :geoip
     t.string :address1
     t.string :address2
