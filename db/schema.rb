@@ -12,6 +12,10 @@
 ActiveRecord::Schema.define(:version => 20090329005631) do
 
   create_table "aisles", :force => true do |t|
+    t.integer  "number"
+    t.string   "store_id"
+    t.string   "description"
+    t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
