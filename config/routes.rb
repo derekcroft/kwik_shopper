@@ -1,9 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :aisles
+
   map.resources :stores
 
   map.resources :categories
-
-  map.resources :aisles
 
   map.resources :items
 
