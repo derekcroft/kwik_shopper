@@ -795,3 +795,257 @@ ActionView::TemplateError (ItemsController missing ActiveScaffold) on line #18 o
 Rendered rescues/_trace (85.4ms)
 Rendered rescues/_request_and_response (0.5ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:50:10) [GET]
+  [4;36;1mStore Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT `items`.* FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.1ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.8ms)
+Rendered _list_column_headings (13.6ms)
+Rendered _messages (1.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _list_actions (5.7ms)
+Rendered _list_record (108.7ms)
+Rendered _list (140.3ms)
+Completed in 306ms (View: 181, DB: 3) | 200 OK [http://localhost/aisles]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit (for 127.0.0.1 at 2009-03-28 21:50:17) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"100"}
+  [4;35;1mStore Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.8ms)
+  [4;35;1mItem Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;35;1mCategory Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (34.1ms)
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (3.2ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (13.1ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (7.3ms)
+Rendered _horizontal_subform (70.9ms)
+Rendered _form_association (142.8ms)
+Rendered _form_attribute (1.0ms)
+  [4;36;1mStore Load (0.2ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _form_association_header (1.2ms)
+Rendered _form_association_record (1.2ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (3.2ms)
+Rendered _horizontal_subform (7.6ms)
+Rendered _form_association (12.3ms)
+Rendered _form (210.6ms)
+Rendered _update_form (222.0ms)
+Rendered _messages (2.2ms)
+Rendered _list_inline_adapter (9.6ms)
+Completed in 276ms (View: 14, DB: 0) | 200 OK [http://localhost/aisles/100/edit?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit_associated (for 127.0.0.1 at 2009-03-28 21:50:40) [GET]
+  Parameters: {"association"=>"items", "id"=>"100"}
+  [4;36;1mStore Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mItem Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+Rendering edit_associated
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (8.1ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (39.0ms)
+Completed in 167ms (View: 57, DB: 4) | 200 OK [http://localhost/aisles/edit_associated/100?association=items]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit_associated (for 127.0.0.1 at 2009-03-28 21:50:51) [GET]
+  Parameters: {"association"=>"items", "id"=>"100"}
+  [4;36;1mStore Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mItem Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+Rendering edit_associated
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (10.0ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (110.4ms)
+Completed in 160ms (View: 126, DB: 3) | 200 OK [http://localhost/aisles/edit_associated/100?association=items]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit_associated (for 127.0.0.1 at 2009-03-28 21:51:02) [GET]
+  Parameters: {"association"=>"items", "id"=>"100"}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mItem Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+Rendering edit_associated
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (8.5ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_association_record (37.7ms)
+Completed in 99ms (View: 53, DB: 4) | 200 OK [http://localhost/aisles/edit_associated/100?association=items]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#update (for 127.0.0.1 at 2009-03-28 21:51:04) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "id"=>"100", "record"=>{"items"=>{"1238291417930"=>{"name"=>"pizza", "category"=>{"id"=>""}, "description"=>"pizza"}, "1238291462081"=>{"name"=>"", "category"=>{"id"=>""}, "description"=>""}, "1238291451774"=>{"name"=>"shoe", "category"=>{"id"=>""}, "description"=>"shoe"}, "1238291440452"=>{"name"=>"salmon", "category"=>{"id"=>""}, "description"=>"salmon"}}, "number"=>"100", "description"=>"beer", "comment"=>"beer"}}
+  [4;36;1mStore Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mCategory Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.2ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering on_update
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (91.7ms)
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (12.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (8.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_association_record (9.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (8.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.7ms)
+Rendered _horizontal_subform (157.7ms)
+Rendered _form_association (165.5ms)
+Rendered _form_attribute (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _form_association_header (1.0ms)
+Rendered _form_association_record (1.0ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.3ms)
+Rendered _horizontal_subform (5.8ms)
+Rendered _form_association (9.6ms)
+Rendered _form (195.3ms)
+Rendered _update_form (208.3ms)
+Rendered _messages (1.3ms)
+Completed in 402ms (View: 234, DB: 5) | 200 OK [http://localhost/aisles/100]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:51:16) [GET]
+  [4;36;1mStore Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;36;1mAisle Load (0.3ms)[0m   [0;1mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT `items`.* FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.2ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.9ms)
+Rendered _list_column_headings (13.3ms)
+Rendered _messages (1.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _list_actions (4.1ms)
+Rendered _list_record (21.2ms)
+Rendered _list (52.7ms)
+Completed in 201ms (View: 160, DB: 3) | 200 OK [http://localhost/aisles]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#new (for 127.0.0.1 at 2009-03-28 21:51:21) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+  [4;35;1mStore Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.8ms)
+  [4;36;1mItem Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mCategory Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (25.2ms)
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (12.0ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (6.0ms)
+Rendered _horizontal_subform (124.1ms)
+Rendered _form_association (132.4ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_header (1.2ms)
+Rendered _form_association_record (1.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.5ms)
+Rendered _horizontal_subform (6.3ms)
+Rendered _form_association (9.0ms)
+Rendered _form (193.0ms)
+Rendered _create_form (204.6ms)
+Rendered _messages (1.3ms)
+Rendered _list_inline_adapter (7.8ms)
+Completed in 322ms (View: 12, DB: 0) | 200 OK [http://localhost/aisles/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#create (for 127.0.0.1 at 2009-03-28 21:51:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "record"=>{"items"=>{"1238291481829"=>{"name"=>"junk", "category"=>{"id"=>""}, "description"=>"junk"}}, "number"=>"100", "description"=>"junk", "comment"=>"junk"}}
+  [4;35;1mStore Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mCategory Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Rendering on_create
+Rendered _form_attribute (2.1ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (23.1ms)
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (11.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (8.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.6ms)
+Rendered _horizontal_subform (65.2ms)
+Rendered _form_association (73.4ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_association_header (1.0ms)
+Rendered _form_association_record (0.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.4ms)
+Rendered _horizontal_subform (5.7ms)
+Rendered _form_association (8.5ms)
+Rendered _form (182.6ms)
+Rendered _create_form (194.4ms)
+Rendered _messages (1.3ms)
+Completed in 294ms (View: 217, DB: 5) | 200 OK [http://localhost/aisles]
