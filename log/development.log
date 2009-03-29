@@ -1,0 +1,2397 @@
+DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library will be REMOVED FROM RAILS 2.2. Please switch to the offical mysql gem: `gem install mysql`  See http://www.rubyonrails.org/deprecation for details. (called from mysql_connection at c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:81)
+DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library will be REMOVED FROM RAILS 2.2. Please switch to the offical mysql gem: `gem install mysql`  See http://www.rubyonrails.org/deprecation for details. (called from mysql_connection at c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:81)
+DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library will be REMOVED FROM RAILS 2.2. Please switch to the offical mysql gem: `gem install mysql`  See http://www.rubyonrails.org/deprecation for details. (called from mysql_connection at c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:81)
+DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library will be REMOVED FROM RAILS 2.2. Please switch to the offical mysql gem: `gem install mysql`  See http://www.rubyonrails.org/deprecation for details. (called from mysql_connection at c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:81)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.172000)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.282000)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000345)[0m   [0mDROP DATABASE IF EXISTS `kwik_shopper_development`[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000266)[0m   [0mCREATE DATABASE `kwik_shopper_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000303)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.004569)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.004006)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000326)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000446)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (0.002112)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000526)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (0.002039)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000487)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (0.002062)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000487)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (0.001984)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000519)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (0.002169)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000469)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (0.002020)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000517)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;36;1mSQL (0.000628)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000339)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000388)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000701)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.000646)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.000385)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.000669)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.000561)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.000355)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.000644)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.000712)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.000428)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.000674)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.000584)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.000362)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (0.000669)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.000556)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.000381)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.000642)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.039722)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.007518)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.011559)[0m   [0mDROP DATABASE IF EXISTS `kwik_shopper_development`[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000246)[0m   [0mCREATE DATABASE `kwik_shopper_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000309)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.004423)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003808)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000297)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000427)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (0.002299)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000499)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (0.002608)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000689)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (0.003291)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `aisle_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000797)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (0.000182)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.006566)[0m   [0mDROP DATABASE IF EXISTS `kwik_shopper_development`[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000238)[0m   [0mCREATE DATABASE `kwik_shopper_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000315)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.006509)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003775)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000314)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000637)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (0.003081)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000712)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (0.002779)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000673)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (0.003064)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `aisle_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000791)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (0.003013)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` int(11), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000702)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (0.000185)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.010108)[0m   [0mDROP DATABASE IF EXISTS `kwik_shopper_development`[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000248)[0m   [0mCREATE DATABASE `kwik_shopper_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000308)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.005468)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003861)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000314)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000540)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (0.002624)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000605)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (0.002423)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000579)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (0.062489)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `aisle_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.022019)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (0.003543)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` int(11), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000925)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (0.024148)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001174)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (0.005526)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001356)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;36;1mSQL (0.000670)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000478)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000747)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001833)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.001976)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.001222)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.003676)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.002049)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.000926)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.001401)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.001532)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.000718)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.001809)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.001615)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.001579)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (0.002802)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.001895)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.000747)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.001794)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.055508)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.007987)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.055361)[0m   [0mDROP DATABASE IF EXISTS `kwik_shopper_development`[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000265)[0m   [0mCREATE DATABASE `kwik_shopper_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000304)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.006272)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.006539)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000490)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000620)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (0.029594)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000787)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (0.003770)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000777)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (0.032853)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `aisle_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000965)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (0.018409)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` int(11), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000733)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (0.003328)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000763)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (0.022905)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001124)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;36;1mSQL (0.001560)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001230)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000661)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001925)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.001774)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.000857)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.001628)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.001146)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.000739)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.001643)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.002263)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.001171)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.002303)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.001797)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.000679)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (0.001754)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.001740)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.001657)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.001618)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.065347)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.008682)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.068562)[0m   [0mDROP DATABASE IF EXISTS `kwik_shopper_development`[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000282)[0m   [0mCREATE DATABASE `kwik_shopper_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000218)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000465)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.007210)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.019601)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000469)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000666)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (0.003381)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000817)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (0.030251)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000724)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (0.004106)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000795)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (0.011288)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` int(11), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000761)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (0.017733)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000894)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (0.017406)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000740)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;36;1mSQL (0.000956)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000555)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000631)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001857)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.002424)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.000794)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.001865)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.001609)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.000742)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.001593)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.001469)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.000687)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.001715)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.001612)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.000930)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (0.002350)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.002606)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.000762)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.001783)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.066884)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.011363)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.055841)[0m   [0mDROP DATABASE IF EXISTS `kwik_shopper_development`[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000249)[0m   [0mCREATE DATABASE `kwik_shopper_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000301)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.007628)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.031500)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000278)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000455)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (0.018295)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000602)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (0.003153)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000617)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (0.004142)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `aisle_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.004713)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (0.002675)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` int(11), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000592)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (0.015452)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000581)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (0.002873)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.005526)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;36;1mSQL (0.000573)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000308)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000327)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001033)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.001499)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.000609)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.001719)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.001278)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.000567)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.000986)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.000830)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.000410)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.000942)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.000735)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.000388)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (0.000951)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.000812)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.000388)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.000797)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.040911)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.007925)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (41.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (10.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (6.8ms)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `aisle_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (5.9ms)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` int(11), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+Migrating to CreateCarts (20090328193548)
+Migrating to CreateItems (20090328193750)
+Migrating to CreateAisles (20090328193838)
+Migrating to CreateCategories (20090328193913)
+Migrating to CreateStores (20090328193954)
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `aisles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `aisles`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `carts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `carts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `categories`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `categories`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `items`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `items`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `stores`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `stores`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (12.4ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (54.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` float, `category_id` int(11), `aisle_id` int(11), `description` varchar(255), `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateAisles (20090328193838)
+  [4;36;1mSQL (3.3ms)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` int(11), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193838')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (3.9ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+/!\ FAILSAFE /!\  Sat Mar 28 21:16:03 -0400 2009
+  Status: 500 Internal Server Error
+  Access denied for user 'kwik_shopper'@'localhost' (using password: YES)
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/rewindable_input.rb:25:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/reloader.rb:9:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/failsafe.rb:11:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:106:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/railties/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (8.4ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (45.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (19.0ms)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `category_id` int(11), `aisle_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+Migrating to CreateAisles (20090329005631)
+  [4;36;1mSQL (6.7ms)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090329005631')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+/!\ FAILSAFE /!\  Sat Mar 28 21:20:39 -0400 2009
+  Status: 500 Internal Server Error
+  Access denied for user 'kwik_shopper'@'localhost' (using password: YES)
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/rewindable_input.rb:25:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/reloader.rb:9:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/failsafe.rb:11:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:106:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/actionpack/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    /home/srini/proj/kwik_shopper/kwik_shopper/vendor/rails/railties/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-03-28 21:21:14) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/aisles_controller.rb:1
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.4ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:23:01) [GET]
+Rendering template within layouts/application
+Rendering aisles/index
+Completed in 19ms (View: 19, DB: 0) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:34:26) [GET]
+Rendering template within layouts/application
+Rendering aisles/index
+Completed in 34ms (View: 6, DB: 1) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:35:16) [GET]
+Rendering template within layouts/application
+Rendering aisles/index
+Completed in 131ms (View: 70, DB: 1) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:36:33) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'aisles.store_id' in 'on clause': SELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'aisles.store_id' in 'on clause': SELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles`  LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id  LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id ):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.2ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (543.8ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (80.1ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (72.9ms)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (72.7ms)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `category_id` int(11), `aisle_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (73.9ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (147.1ms)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+Migrating to CreateAisles (20090329005631)
+  [4;36;1mSQL (210.7ms)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` varchar(255), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090329005631')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:41:38) [GET]
+  [4;36;1mSQL (53.4ms)[0m   [0;1mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;35;1mAisle Load (7.9ms)[0m   [0mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (18.8ms)
+Rendered _list_column_headings (29.9ms)
+Rendered _messages (1.4ms)
+Rendered _list (43.4ms)
+Completed in 252ms (View: 156, DB: 62) | 200 OK [http://localhost/aisles]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#new (for 127.0.0.1 at 2009-03-28 21:41:52) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.7ms)
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+
+ActionView::TemplateError (ItemsController missing ActiveScaffold) on line #18 of vendor/plugins/active_scaffold/frontends/default/views/_form_association.rhtml:
+15: -%>
+16: <h5><%= column.label -%> (<%= link_to_visibility_toggle(:default_visible => !column.collapsed) -%>)</h5>
+17: <div <%= 'style="display: none;"' if column.collapsed -%>>
+18: <%= render :partial => subform_partial_for_column(column), :locals => {:column => column, :parent_record => parent_record, :associated => associated} %>
+19: </div>
+20: <% @record = parent_record -%>
+
+    vendor/plugins/active_scaffold/frontends/default/views/_form_association.rhtml:18:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_form_association46rhtml_locals_column_form_association_object'
+    vendor/plugins/active_scaffold/frontends/default/views/_form.rhtml:10:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_form46rhtml_locals_columns_form_object'
+    vendor/plugins/active_scaffold/frontends/default/views/_form.rhtml:2:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_form46rhtml_locals_columns_form_object'
+    vendor/plugins/active_scaffold/frontends/default/views/_create_form.rhtml:37:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_create_form46rhtml_locals_create_form_object'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.3ms)
+Rendered rescues/_request_and_response (2.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:43:08) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;35;1mAisle Load (0.4ms)[0m   [0mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT `items`.* FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;35;1mStore Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mStore Load (0.3ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.4ms)
+Rendered _list_column_headings (13.3ms)
+Rendered _messages (1.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _list_actions (4.9ms)
+Rendered _list_record (104.5ms)
+Rendered _list (135.5ms)
+Completed in 279ms (View: 245, DB: 4) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit (for 127.0.0.1 at 2009-03-28 21:43:13) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"100"}
+  [4;36;1mAisle Load (0.4ms)[0m   [0;1mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.8ms)
+  [4;35;1mItem Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+
+ActionView::TemplateError (ItemsController missing ActiveScaffold) on line #18 of vendor/plugins/active_scaffold/frontends/default/views/_form_association.rhtml:
+15: -%>
+16: <h5><%= column.label -%> (<%= link_to_visibility_toggle(:default_visible => !column.collapsed) -%>)</h5>
+17: <div <%= 'style="display: none;"' if column.collapsed -%>>
+18: <%= render :partial => subform_partial_for_column(column), :locals => {:column => column, :parent_record => parent_record, :associated => associated} %>
+19: </div>
+20: <% @record = parent_record -%>
+
+    vendor/plugins/active_scaffold/frontends/default/views/_form_association.rhtml:18:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_form_association46rhtml_locals_column_form_association_object'
+    vendor/plugins/active_scaffold/frontends/default/views/_form.rhtml:10:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_form46rhtml_locals_columns_form_object'
+    vendor/plugins/active_scaffold/frontends/default/views/_form.rhtml:2:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_form46rhtml_locals_columns_form_object'
+    vendor/plugins/active_scaffold/frontends/default/views/_update_form.rhtml:41:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_update_form46rhtml_locals_object_update_form'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:50:10) [GET]
+  [4;36;1mStore Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT `items`.* FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.1ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.8ms)
+Rendered _list_column_headings (13.6ms)
+Rendered _messages (1.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _list_actions (5.7ms)
+Rendered _list_record (108.7ms)
+Rendered _list (140.3ms)
+Completed in 306ms (View: 181, DB: 3) | 200 OK [http://localhost/aisles]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit (for 127.0.0.1 at 2009-03-28 21:50:17) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"100"}
+  [4;35;1mStore Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.8ms)
+  [4;35;1mItem Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;35;1mCategory Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (34.1ms)
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (3.2ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (13.1ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (7.3ms)
+Rendered _horizontal_subform (70.9ms)
+Rendered _form_association (142.8ms)
+Rendered _form_attribute (1.0ms)
+  [4;36;1mStore Load (0.2ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _form_association_header (1.2ms)
+Rendered _form_association_record (1.2ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (3.2ms)
+Rendered _horizontal_subform (7.6ms)
+Rendered _form_association (12.3ms)
+Rendered _form (210.6ms)
+Rendered _update_form (222.0ms)
+Rendered _messages (2.2ms)
+Rendered _list_inline_adapter (9.6ms)
+Completed in 276ms (View: 14, DB: 0) | 200 OK [http://localhost/aisles/100/edit?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit_associated (for 127.0.0.1 at 2009-03-28 21:50:40) [GET]
+  Parameters: {"association"=>"items", "id"=>"100"}
+  [4;36;1mStore Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mItem Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+Rendering edit_associated
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (8.1ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (39.0ms)
+Completed in 167ms (View: 57, DB: 4) | 200 OK [http://localhost/aisles/edit_associated/100?association=items]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit_associated (for 127.0.0.1 at 2009-03-28 21:50:51) [GET]
+  Parameters: {"association"=>"items", "id"=>"100"}
+  [4;36;1mStore Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mItem Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+Rendering edit_associated
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (10.0ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (110.4ms)
+Completed in 160ms (View: 126, DB: 3) | 200 OK [http://localhost/aisles/edit_associated/100?association=items]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit_associated (for 127.0.0.1 at 2009-03-28 21:51:02) [GET]
+  Parameters: {"association"=>"items", "id"=>"100"}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mItem Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+Rendering edit_associated
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (8.5ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_association_record (37.7ms)
+Completed in 99ms (View: 53, DB: 4) | 200 OK [http://localhost/aisles/edit_associated/100?association=items]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#update (for 127.0.0.1 at 2009-03-28 21:51:04) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "id"=>"100", "record"=>{"items"=>{"1238291417930"=>{"name"=>"pizza", "category"=>{"id"=>""}, "description"=>"pizza"}, "1238291462081"=>{"name"=>"", "category"=>{"id"=>""}, "description"=>""}, "1238291451774"=>{"name"=>"shoe", "category"=>{"id"=>""}, "description"=>"shoe"}, "1238291440452"=>{"name"=>"salmon", "category"=>{"id"=>""}, "description"=>"salmon"}}, "number"=>"100", "description"=>"beer", "comment"=>"beer"}}
+  [4;36;1mStore Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mCategory Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.2ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering on_update
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (91.7ms)
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (12.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (8.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_association_record (9.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (8.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.7ms)
+Rendered _horizontal_subform (157.7ms)
+Rendered _form_association (165.5ms)
+Rendered _form_attribute (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _form_association_header (1.0ms)
+Rendered _form_association_record (1.0ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.3ms)
+Rendered _horizontal_subform (5.8ms)
+Rendered _form_association (9.6ms)
+Rendered _form (195.3ms)
+Rendered _update_form (208.3ms)
+Rendered _messages (1.3ms)
+Completed in 402ms (View: 234, DB: 5) | 200 OK [http://localhost/aisles/100]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:51:16) [GET]
+  [4;36;1mStore Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;36;1mAisle Load (0.3ms)[0m   [0;1mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT `items`.* FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.2ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.9ms)
+Rendered _list_column_headings (13.3ms)
+Rendered _messages (1.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _list_actions (4.1ms)
+Rendered _list_record (21.2ms)
+Rendered _list (52.7ms)
+Completed in 201ms (View: 160, DB: 3) | 200 OK [http://localhost/aisles]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#new (for 127.0.0.1 at 2009-03-28 21:51:21) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+  [4;35;1mStore Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.8ms)
+  [4;36;1mItem Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mCategory Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (25.2ms)
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (12.0ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (6.0ms)
+Rendered _horizontal_subform (124.1ms)
+Rendered _form_association (132.4ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_header (1.2ms)
+Rendered _form_association_record (1.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.5ms)
+Rendered _horizontal_subform (6.3ms)
+Rendered _form_association (9.0ms)
+Rendered _form (193.0ms)
+Rendered _create_form (204.6ms)
+Rendered _messages (1.3ms)
+Rendered _list_inline_adapter (7.8ms)
+Completed in 322ms (View: 12, DB: 0) | 200 OK [http://localhost/aisles/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#create (for 127.0.0.1 at 2009-03-28 21:51:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "record"=>{"items"=>{"1238291481829"=>{"name"=>"junk", "category"=>{"id"=>""}, "description"=>"junk"}}, "number"=>"100", "description"=>"junk", "comment"=>"junk"}}
+  [4;35;1mStore Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mCategory Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Rendering on_create
+Rendered _form_attribute (2.1ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (23.1ms)
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (11.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (8.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.6ms)
+Rendered _horizontal_subform (65.2ms)
+Rendered _form_association (73.4ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_association_header (1.0ms)
+Rendered _form_association_record (0.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.4ms)
+Rendered _horizontal_subform (5.7ms)
+Rendered _form_association (8.5ms)
+Rendered _form (182.6ms)
+Rendered _create_form (194.4ms)
+Rendered _messages (1.3ms)
+Completed in 294ms (View: 217, DB: 5) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 21:53:15) [GET]
+  [4;36;1mStore Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT `items`.* FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.1ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.0ms)
+Rendered _list_column_headings (16.9ms)
+Rendered _messages (1.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _list_actions (5.2ms)
+Rendered _list_record (107.0ms)
+Rendered _list (140.9ms)
+Completed in 302ms (View: 178, DB: 3) | 200 OK [http://localhost/aisles]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#new (for 127.0.0.1 at 2009-03-28 21:53:18) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+  [4;35;1mStore Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+Rendered _form_attribute (2.2ms)
+Rendered _form_attribute (0.7ms)
+  [4;36;1mItem Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mCategory Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (30.8ms)
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (11.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (6.4ms)
+Rendered _horizontal_subform (64.9ms)
+Rendered _form_association (140.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (1.0ms)
+Rendered _form_association_record (0.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.3ms)
+Rendered _horizontal_subform (5.6ms)
+Rendered _form_association (8.2ms)
+Rendered _form (197.4ms)
+Rendered _create_form (208.5ms)
+Rendered _messages (1.4ms)
+Rendered _list_inline_adapter (7.1ms)
+Completed in 257ms (View: 11, DB: 0) | 200 OK [http://localhost/aisles/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#create (for 127.0.0.1 at 2009-03-28 21:53:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "record"=>{"items"=>{"1238291599124"=>{"name"=>"ddd", "category"=>{"id"=>""}, "description"=>"ddd"}}, "number"=>"100", "description"=>"ddd", "comment"=>"ddd"}}
+  [4;35;1mStore Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mCategory Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Rendering on_create
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_header (21.5ms)
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.8ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (12.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.7ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (10.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.5ms)
+Rendered _horizontal_subform (132.6ms)
+Rendered _form_association (140.1ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_header (1.1ms)
+Rendered _form_association_record (1.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.4ms)
+Rendered _horizontal_subform (6.1ms)
+Rendered _form_association (9.0ms)
+Rendered _form (170.2ms)
+Rendered _create_form (182.3ms)
+Rendered _messages (1.5ms)
+Completed in 364ms (View: 207, DB: 5) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#show (for 127.0.0.1 at 2009-03-28 21:53:49) [GET]
+  Parameters: {"association"=>"store", "id"=>"edit_associated"}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.4ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aisle with ID=edit_associated):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#show (for 127.0.0.1 at 2009-03-28 21:53:58) [GET]
+  Parameters: {"association"=>"store", "id"=>"edit_associated"}
+  [4;36;1mStore Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aisle with ID=edit_associated):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAisles (20090329005631)
+  [4;35;1mSQL (6.3ms)[0m   [0mDROP TABLE `aisles`[0m
+  [4;36;1mSQL (40.7ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090329005631'[0m
+Migrating to CreateStores (20090328193954)
+  [4;35;1mSQL (25.1ms)[0m   [0mDROP TABLE `stores`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193954'[0m
+Migrating to CreateCategories (20090328193913)
+  [4;35;1mSQL (5.6ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193913'[0m
+Migrating to CreateItems (20090328193750)
+  [4;35;1mSQL (1.3ms)[0m   [0mDROP TABLE `items`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193750'[0m
+Migrating to CreateCarts (20090328193548)
+  [4;35;1mSQL (2.2ms)[0m   [0mDROP TABLE `carts`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193548'[0m
+Migrating to CreateUsers (20090328193436)
+  [4;35;1mSQL (41.0ms)[0m   [0mDROP TABLE `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193436'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;35;1mSQL (10.8ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;35;1mSQL (61.2ms)[0m   [0mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;35;1mSQL (6.8ms)[0m   [0mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `category_id` int(11), `aisle_id` int(11), `price` float, `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;35;1mSQL (5.1ms)[0m   [0mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+Migrating to CreateAisles (20090329005631)
+  [4;35;1mSQL (6.4ms)[0m   [0mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` varchar(255), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090329005631')[0m
+Migrating to CartItem (20090329020300)
+  [4;35;1mSQL (4.3ms)[0m   [0mCREATE TABLE `cart_item` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `cart_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090329020300')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `aisles`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `aisles`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `cart_item`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `cart_item`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `cart_item`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 22:06:45) [GET]
+  [4;36;1mStore Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;36;1mAisle Load (0.4ms)[0m   [0;1mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (20.8ms)
+Rendered _list_column_headings (13.6ms)
+Rendered _messages (1.3ms)
+Rendered _list (27.0ms)
+Completed in 200ms (View: 141, DB: 3) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#new (for 127.0.0.1 at 2009-03-28 22:06:50) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+  [4;36;1mStore Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.8ms)
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mCategory Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (93.0ms)
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (3.1ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (16.8ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (6.3ms)
+Rendered _horizontal_subform (131.3ms)
+Rendered _form_association (139.2ms)
+Rendered _form_attribute (1.3ms)
+Rendered _form_association_header (3.4ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (15.2ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.5ms)
+Rendered _horizontal_subform (22.6ms)
+Rendered _form_association (25.3ms)
+Rendered _form (215.6ms)
+Rendered _create_form (227.6ms)
+Rendered _messages (1.4ms)
+Rendered _list_inline_adapter (7.0ms)
+Completed in 288ms (View: 11, DB: 0) | 200 OK [http://localhost/aisles/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#create (for 127.0.0.1 at 2009-03-28 22:07:21) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "record"=>{"items"=>{"1238292411038"=>{"name"=>"ddd", "category"=>{"id"=>""}, "price"=>"12", "unit_of_measure"=>"ddd", "description"=>"ddd"}}, "number"=>"1333", "store"=>{"address1"=>"ddd", "city"=>"ddd", "name"=>"dd", "address2"=>"dddd", "zip"=>"", "geoip"=>"dd", "state"=>""}, "description"=>"ddd", "comment"=>"ddd"}}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mCategory Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering on_create
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_association_header (23.3ms)
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (15.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_association_record (12.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (7.2ms)
+Rendered _horizontal_subform (141.8ms)
+Rendered _form_association (150.4ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (3.7ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (16.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.4ms)
+Rendered _horizontal_subform (24.4ms)
+Rendered _form_association (27.0ms)
+Rendered _form (200.8ms)
+Rendered _create_form (212.7ms)
+Rendered _messages (1.3ms)
+Completed in 407ms (View: 315, DB: 5) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CartItem (20090329020300)
+  [4;35;1mSQL (7.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090329020300'[0m
+Migrating to CreateAisles (20090329005631)
+  [4;36;1mSQL (51.9ms)[0m   [0;1mDROP TABLE `aisles`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090329005631'[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (7.1ms)[0m   [0;1mDROP TABLE `stores`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090328193954'[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (7.4ms)[0m   [0;1mDROP TABLE `categories`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090328193913'[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (25.5ms)[0m   [0;1mDROP TABLE `items`[0m
+  [4;35;1mSQL (9.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090328193750'[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (1.3ms)[0m   [0;1mDROP TABLE `carts`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090328193548'[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (1.9ms)[0m   [0;1mDROP TABLE `users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090328193436'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (12.7ms)[0m   [0mSHOW FIELDS FROM `cart_item`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `cart_item`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `cart_item`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;35;1mSQL (7.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;35;1mSQL (4.1ms)[0m   [0mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;35;1mSQL (38.1ms)[0m   [0mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `name` varchar(255), `description` varchar(255), `category_id` int(11), `aisle_id` int(11), `price` float, `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;35;1mSQL (5.4ms)[0m   [0mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (10.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;35;1mSQL (4.4ms)[0m   [0mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+Migrating to CreateAisles (20090329005631)
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` varchar(255), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090329005631')[0m
+Migrating to CartItem (20090329020300)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'cart_item' already exists: CREATE TABLE `cart_item` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `cart_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAisles (20090329005631)
+  [4;35;1mSQL (12.1ms)[0m   [0mDROP TABLE `aisles`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090329005631'[0m
+Migrating to CreateStores (20090328193954)
+  [4;35;1mSQL (42.1ms)[0m   [0mDROP TABLE `stores`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193954'[0m
+Migrating to CreateCategories (20090328193913)
+  [4;35;1mSQL (6.7ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193913'[0m
+Migrating to CreateItems (20090328193750)
+  [4;35;1mSQL (9.5ms)[0m   [0mDROP TABLE `items`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193750'[0m
+Migrating to CreateCarts (20090328193548)
+  [4;35;1mSQL (5.5ms)[0m   [0mDROP TABLE `carts`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193548'[0m
+Migrating to CreateUsers (20090328193436)
+  [4;35;1mSQL (25.0ms)[0m   [0mDROP TABLE `users`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193436'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `cart_item`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `cart_item`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `cart_item`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;35;1mSQL (46.3ms)[0m   [0mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `name` varchar(255), `description` varchar(255), `category_id` int(11), `aisle_id` int(11), `price` float, `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (10.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;35;1mSQL (3.2ms)[0m   [0mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (10.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;35;1mSQL (17.2ms)[0m   [0mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+Migrating to CreateAisles (20090329005631)
+  [4;35;1mSQL (7.3ms)[0m   [0mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` varchar(255), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090329005631')[0m
+Migrating to CartItem (20090329020300)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'cart_item' already exists: CREATE TABLE `cart_item` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `cart_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAisles (20090329005631)
+  [4;35;1mSQL (8.1ms)[0m   [0mDROP TABLE `aisles`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090329005631'[0m
+Migrating to CreateStores (20090328193954)
+  [4;35;1mSQL (2.1ms)[0m   [0mDROP TABLE `stores`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193954'[0m
+Migrating to CreateCategories (20090328193913)
+  [4;35;1mSQL (1.2ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193913'[0m
+Migrating to CreateItems (20090328193750)
+  [4;35;1mSQL (42.0ms)[0m   [0mDROP TABLE `items`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193750'[0m
+Migrating to CreateCarts (20090328193548)
+  [4;35;1mSQL (7.3ms)[0m   [0mDROP TABLE `carts`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193548'[0m
+Migrating to CreateUsers (20090328193436)
+  [4;35;1mSQL (7.6ms)[0m   [0mDROP TABLE `users`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090328193436'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `cart_item`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `cart_item`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `cart_item`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;35;1mSQL (60.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;35;1mSQL (9.1ms)[0m   [0mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `name` varchar(255), `description` varchar(255), `category_id` int(11), `aisle_id` int(11), `price` float, `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;35;1mSQL (6.6ms)[0m   [0mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;35;1mSQL (5.3ms)[0m   [0mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+Migrating to CreateAisles (20090329005631)
+  [4;35;1mSQL (15.3ms)[0m   [0mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` varchar(255), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090329005631')[0m
+Migrating to CartItem (20090329020300)
+  [4;35;1mSQL (6.6ms)[0m   [0mCREATE TABLE `carts_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `cart_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090329020300')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `aisles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `aisles`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `carts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `carts`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `carts_items`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `carts_items`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `carts_items`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+Migrating to CreateCarts (20090328193548)
+Migrating to CreateItems (20090328193750)
+Migrating to CreateCategories (20090328193913)
+Migrating to CreateStores (20090328193954)
+Migrating to CreateAisles (20090329005631)
+Migrating to CartItem (20090329020300)
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `aisles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `aisles`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `carts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `carts`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `carts_items`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `carts_items`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `carts_items`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `items`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `stores`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `stores`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (7.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (41.6ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (16.7ms)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `name` varchar(255), `description` varchar(255), `category_id` int(11), `aisle_id` int(11), `price` float, `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (5.6ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (16.3ms)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (10.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+Migrating to CreateAisles (20090329005631)
+  [4;36;1mSQL (7.6ms)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` varchar(255), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090329005631')[0m
+Migrating to CartItem (20090329020300)
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE `carts_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `cart_id` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090329020300')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW FIELDS FROM `carts_items`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `carts_items`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `carts_items`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `categories`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `categories`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `items`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `items`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `stores`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `stores`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (52.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (9.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090328193436)
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193436')[0m
+Migrating to CreateCarts (20090328193548)
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193548')[0m
+Migrating to CreateItems (20090328193750)
+  [4;36;1mSQL (19.5ms)[0m   [0;1mCREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `name` varchar(255), `description` varchar(255), `category_id` int(11), `aisle_id` int(11), `price` float, `unit_of_measure` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193750')[0m
+Migrating to CreateCategories (20090328193913)
+  [4;36;1mSQL (16.2ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193913')[0m
+Migrating to CreateStores (20090328193954)
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `geoip` int(11), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(255), `zip` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090328193954')[0m
+Migrating to CreateAisles (20090329005631)
+  [4;36;1mSQL (17.6ms)[0m   [0;1mCREATE TABLE `aisles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `store_id` varchar(255), `description` varchar(255), `comment` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090329005631')[0m
+Migrating to CartItem (20090329020300)
+  [4;36;1mSQL (5.6ms)[0m   [0;1mCREATE TABLE `carts_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_id` int(11), `cart_id` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090329020300')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `aisles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `aisles`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `carts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `carts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `carts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `carts_items`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `carts_items`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `carts_items`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `categories`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `categories`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `items`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `items`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `stores`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `stores`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 22:16:46) [GET]
+  [4;36;1mStore Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;36;1mAisle Load (0.7ms)[0m   [0;1mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (20.9ms)
+Rendered _list_column_headings (13.7ms)
+Rendered _messages (1.3ms)
+Rendered _list (27.0ms)
+Completed in 197ms (View: 139, DB: 3) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#new (for 127.0.0.1 at 2009-03-28 22:16:52) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+  [4;36;1mStore Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+Rendered _form_attribute (2.1ms)
+Rendered _form_attribute (0.7ms)
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mCategory Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (98.0ms)
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (3.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_association_record (17.6ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (6.4ms)
+Rendered _horizontal_subform (137.2ms)
+Rendered _form_association (145.0ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (3.4ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_association_record (15.6ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.9ms)
+Rendered _horizontal_subform (23.6ms)
+Rendered _form_association (26.5ms)
+Rendered _form (225.8ms)
+Rendered _create_form (238.0ms)
+Rendered _messages (1.5ms)
+Rendered _list_inline_adapter (7.9ms)
+Completed in 307ms (View: 12, DB: 0) | 200 OK [http://localhost/aisles/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#create (for 127.0.0.1 at 2009-03-28 22:17:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "record"=>{"items"=>{"1238293012328"=>{"name"=>"ddd", "category"=>{"id"=>""}, "price"=>"98", "unit_of_measure"=>"dd", "description"=>"dd"}}, "number"=>"199", "store"=>{"address1"=>"ddd", "city"=>"ddd", "name"=>"dd", "address2"=>"ddd", "zip"=>"", "geoip"=>"123", "state"=>""}, "description"=>"ddd", "comment"=>"ddd"}}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mCategory Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering on_create
+Rendered _form_attribute (2.1ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (25.9ms)
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.9ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (16.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (12.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.6ms)
+Rendered _horizontal_subform (142.0ms)
+Rendered _form_association (149.7ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_association_header (3.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (17.0ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.4ms)
+Rendered _horizontal_subform (25.0ms)
+Rendered _form_association (27.7ms)
+Rendered _form (199.4ms)
+Rendered _create_form (211.4ms)
+Rendered _messages (1.3ms)
+Completed in 407ms (View: 315, DB: 6) | 200 OK [http://localhost/aisles]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 22:18:24) [GET]
+  [4;35;1mStore Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;35;1mAisle Load (0.3ms)[0m   [0mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT `items`.* FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;35;1mStore Load (0.3ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (3.9ms)
+Rendered _list_column_headings (14.9ms)
+Rendered _messages (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _list_actions (6.9ms)
+Rendered _list_record (113.0ms)
+Rendered _list (219.2ms)
+Completed in 298ms (View: 247, DB: 4) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit (for 127.0.0.1 at 2009-03-28 22:18:29) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"100"}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.4ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.7ms)
+  [4;36;1mItem Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mCategory Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (29.4ms)
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_association_record (15.1ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (6.5ms)
+Rendered _horizontal_subform (129.9ms)
+Rendered _form_association (138.9ms)
+Rendered _form_attribute (1.0ms)
+  [4;35;1mStore Load (0.2ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _form_association_header (3.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (16.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.4ms)
+Rendered _horizontal_subform (24.1ms)
+Rendered _form_association (28.0ms)
+Rendered _form (225.5ms)
+Rendered _update_form (237.3ms)
+Rendered _messages (1.4ms)
+Rendered _list_inline_adapter (7.7ms)
+Completed in 366ms (View: 12, DB: 0) | 200 OK [http://localhost/aisles/100/edit?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#update (for 127.0.0.1 at 2009-03-28 22:18:48) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "id"=>"100", "record"=>{"items"=>{"1238293109229"=>{"name"=>"", "category"=>{"id"=>""}, "price"=>"", "unit_of_measure"=>"", "description"=>""}}, "number"=>"120", "store"=>{"address1"=>"", "city"=>"", "name"=>"", "address2"=>"", "zip"=>"", "geoip"=>"", "state"=>""}, "description"=>"100", "comment"=>"ddd"}}
+  [4;35;1mStore Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.2ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering on_update
+Rendered _form_attribute (1.9ms)
+Rendered _form_attribute (0.9ms)
+  [4;35;1mCategory Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (32.8ms)
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (15.6ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.5ms)
+Rendered _horizontal_subform (68.3ms)
+Rendered _form_association (77.0ms)
+Rendered _form_attribute (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+Rendered _form_association_header (3.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (15.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+Rendered _form_association_footer (2.7ms)
+Rendered _horizontal_subform (22.5ms)
+Rendered _form_association (26.0ms)
+Rendered _form (227.9ms)
+Rendered _update_form (239.1ms)
+Rendered _messages (1.3ms)
+Completed in 387ms (View: 333, DB: 7) | 200 OK [http://localhost/aisles/100]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#update (for 127.0.0.1 at 2009-03-28 22:19:08) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "id"=>"100", "record"=>{"items"=>{"1238293129185"=>{"name"=>"", "category"=>{"id"=>""}, "price"=>"", "unit_of_measure"=>"", "description"=>""}}, "number"=>"120", "store"=>{"address1"=>"ddd", "city"=>"4747", "name"=>"ddd", "address2"=>"ddd", "zip"=>"", "geoip"=>"88778", "state"=>""}, "description"=>"100", "comment"=>"ddd"}}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.2ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;35;1mStore Load (0.2ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 100) [0m
+  [4;35;1mStore Create (0.4ms)[0m   [0mINSERT INTO `stores` (`name`, `address1`, `city`, `address2`, `zip`, `updated_at`, `geoip`, `state`, `created_at`) VALUES('ddd', 'ddd', '4747', 'ddd', NULL, '2009-03-29 02:19:08', 88778, NULL, '2009-03-29 02:19:08')[0m
+  [4;36;1mAisle Update (50.8ms)[0m   [0;1mUPDATE `aisles` SET `number` = 120, `store_id` = 1, `updated_at` = '2009-03-29 02:19:08' WHERE `id` = 100[0m
+  [4;35;1mSQL (5.7ms)[0m   [0mCOMMIT[0m
+Rendering on_update
+Rendered _messages (1.4ms)
+Completed in 137ms (View: 20, DB: 61) | 200 OK [http://localhost/aisles/100?authenticity_token=GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI%3D]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#row (for 127.0.0.1 at 2009-03-28 22:19:08) [GET]
+  Parameters: {"id"=>"100"}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mAisle Load (0.4ms)[0m   [0mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;36;1mItem Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.4ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 1) [0m
+Rendered _list_actions (4.1ms)
+Rendered _list_record (106.7ms)
+Completed in 154ms (View: 117, DB: 5) | 200 OK [http://localhost/aisles/row/100?_method=get]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit (for 127.0.0.1 at 2009-03-28 22:19:12) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"100"}
+  [4;35;1mStore Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+Rendered _form_attribute (1.9ms)
+Rendered _form_attribute (0.7ms)
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;35;1mCategory Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (34.3ms)
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (15.6ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.6ms)
+Rendered _horizontal_subform (143.3ms)
+Rendered _form_association (151.9ms)
+Rendered _form_attribute (0.8ms)
+  [4;36;1mStore Load (0.2ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 1) [0m
+Rendered _form_association_header (3.4ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (15.3ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+  [4;36;1mStore Load (0.4ms)[0m   [0;1mSELECT * FROM `stores` [0m
+Rendered _form_association_footer (4.0ms)
+Rendered _horizontal_subform (24.1ms)
+Rendered _form_association (27.8ms)
+Rendered _form (231.1ms)
+Rendered _update_form (241.3ms)
+Rendered _messages (1.3ms)
+Rendered _list_inline_adapter (7.1ms)
+Completed in 301ms (View: 10, DB: 0) | 200 OK [http://localhost/aisles/100/edit?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit_associated (for 127.0.0.1 at 2009-03-28 22:19:20) [GET]
+  Parameters: {"association"=>"items", "id"=>"100"}
+  [4;35;1mStore Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+Rendering edit_associated
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (8.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (45.6ms)
+Completed in 187ms (View: 63, DB: 4) | 200 OK [http://localhost/aisles/edit_associated/100?association=items]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#edit_associated (for 127.0.0.1 at 2009-03-28 22:19:22) [GET]
+  Parameters: {"association"=>"items", "id"=>"100"}
+  [4;35;1mStore Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+Rendering edit_associated
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (9.5ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_association_record (120.0ms)
+Completed in 180ms (View: 136, DB: 4) | 200 OK [http://localhost/aisles/edit_associated/100?association=items]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#update (for 127.0.0.1 at 2009-03-28 22:20:17) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "id"=>"100", "associated_id"=>"", "record"=>{"items"=>{"1238293152661"=>{"name"=>"ggg", "category"=>{"id"=>""}, "price"=>"232", "unit_of_measure"=>"ddd", "description"=>"ddd"}, "1238293161049"=>{"name"=>"hhh", "category"=>{"id"=>""}, "price"=>"565", "unit_of_measure"=>"hhh", "description"=>"ggg"}, "1238293163035"=>{"name"=>"fff", "category"=>{"id"=>""}, "price"=>"656", "unit_of_measure"=>"ffff", "description"=>"fff"}}, "number"=>"1500", "store"=>{"address1"=>"ddd", "city"=>"4747", "name"=>"ddd", "address2"=>"ddd", "zip"=>"", "id"=>"1", "geoip"=>"88778", "state"=>""}, "description"=>"100", "comment"=>"ddd"}}
+  [4;35;1mStore Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 100) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mCategory Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;35;1mStore Load (0.2ms)[0m   [0mSELECT * FROM `stores` WHERE (`stores`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering on_update
+Rendered _form_attribute (1.9ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_association_header (25.6ms)
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (2.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (16.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_association_record (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (12.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (12.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.4ms)
+Rendered _horizontal_subform (105.4ms)
+Rendered _form_association (113.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (3.4ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (16.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+  [4;35;1mStore Load (0.1ms)[0m   [0mSELECT * FROM `stores` [0m
+Rendered _form_association_footer (3.6ms)
+Rendered _horizontal_subform (24.6ms)
+Rendered _form_association (27.3ms)
+Rendered _form (239.2ms)
+Rendered _update_form (251.3ms)
+Rendered _messages (1.3ms)
+Completed in 451ms (View: 352, DB: 6) | 200 OK [http://localhost/aisles/100]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-28 22:20:42) [GET]
+
+ActionController::RoutingError (No route matches "/category" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-03-28 22:20:47) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(DISTINCT `categories`.id) AS count_all FROM `categories` LEFT OUTER JOIN `items` ON items.category_id = categories.id [0m
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT `categories`.* FROM `categories` ORDER BY categories.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `categories`.* FROM `categories` ORDER BY categories.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.7ms)
+Rendered _list_column_headings (10.3ms)
+Rendered _messages (1.4ms)
+Rendered _list (95.4ms)
+Completed in 152ms (View: 128, DB: 2) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCategory Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-03-28 22:20:51) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (2.6ms)
+  [4;36;1mItem Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+Rendered _form_association_header (36.6ms)
+  [4;36;1mAisle Load (0.4ms)[0m   [0;1mSELECT * FROM `aisles` [0m
+Rendered _form_attribute (3.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (16.1ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (category_id IS NULL) [0m
+Rendered _form_association_footer (6.2ms)
+Rendered _horizontal_subform (74.1ms)
+Rendered _form_association (83.7ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form (198.8ms)
+Rendered _create_form (209.9ms)
+Rendered _messages (1.4ms)
+Rendered _list_inline_adapter (11.6ms)
+Completed in 244ms (View: 15, DB: 0) | 200 OK [http://localhost/categories/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCategory Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+
+
+Processing CategoriesController#create (for 127.0.0.1 at 2009-03-28 22:21:37) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "record"=>{"name"=>"grocery", "items"=>{"1238293251741"=>{"name"=>"", "price"=>"", "aisle"=>{"id"=>""}, "unit_of_measure"=>"", "description"=>""}}, "description"=>"grocery"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mCategory Create (0.4ms)[0m   [0;1mINSERT INTO `categories` (`name`, `updated_at`, `description`, `created_at`) VALUES('grocery', '2009-03-29 02:21:37', 'grocery', '2009-03-29 02:21:37')[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (5.1ms)
+Rendered _list_record (18.8ms)
+Rendered _messages (1.3ms)
+Completed in 77ms (View: 41, DB: 6) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCategory Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-03-28 22:21:42) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (2.3ms)
+  [4;36;1mItem Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+Rendered _form_association_header (34.1ms)
+  [4;36;1mAisle Load (0.2ms)[0m   [0;1mSELECT * FROM `aisles` [0m
+Rendered _form_attribute (3.1ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (17.0ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (category_id IS NULL) [0m
+Rendered _form_association_footer (5.8ms)
+Rendered _horizontal_subform (73.5ms)
+Rendered _form_association (82.0ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form (203.9ms)
+Rendered _create_form (213.6ms)
+Rendered _messages (1.4ms)
+Rendered _list_inline_adapter (72.3ms)
+Completed in 309ms (View: 76, DB: 0) | 200 OK [http://localhost/categories/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCategory Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+
+
+Processing CategoriesController#create (for 127.0.0.1 at 2009-03-28 22:21:50) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "record"=>{"name"=>"pharma", "items"=>{"1238293302541"=>{"name"=>"", "price"=>"", "aisle"=>{"id"=>""}, "unit_of_measure"=>"", "description"=>""}}, "description"=>""}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mCategory Create (0.3ms)[0m   [0;1mINSERT INTO `categories` (`name`, `updated_at`, `description`, `created_at`) VALUES('pharma', '2009-03-29 02:21:50', NULL, '2009-03-29 02:21:50')[0m
+  [4;35;1mSQL (9.4ms)[0m   [0mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (3.9ms)
+Rendered _list_record (16.7ms)
+Rendered _messages (1.3ms)
+Completed in 78ms (View: 38, DB: 12) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#index (for 127.0.0.1 at 2009-03-28 22:22:01) [GET]
+  [4;36;1mStore Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(DISTINCT `aisles`.id) AS count_all FROM `aisles` LEFT OUTER JOIN `items` ON items.aisle_id = aisles.id LEFT OUTER JOIN `stores` ON `stores`.id = `aisles`.store_id [0m
+  [4;36;1mAisle Load (0.4ms)[0m   [0;1mSELECT `aisles`.* FROM `aisles` ORDER BY aisles.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mItem Load (1.9ms)[0m   [0mSELECT `items`.* FROM `items` WHERE (`items`.aisle_id = 100) [0m
+  [4;36;1mStore Load (0.2ms)[0m   [0;1mSELECT * FROM `stores` WHERE (`stores`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.3ms)
+Rendered _list_column_headings (13.3ms)
+Rendered _messages (1.3ms)
+Rendered _list_actions (4.0ms)
+Rendered _list_record (18.1ms)
+Rendered _list (48.9ms)
+Completed in 228ms (View: 80, DB: 7) | 200 OK [http://localhost/aisles]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#new (for 127.0.0.1 at 2009-03-28 22:22:07) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+  [4;35;1mStore Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+Rendered _form_attribute (2.1ms)
+Rendered _form_attribute (0.8ms)
+  [4;36;1mItem Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mCategory Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered _form_association_header (127.7ms)
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (4.4ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_association_record (23.8ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (8.3ms)
+Rendered _horizontal_subform (177.1ms)
+Rendered _form_association (184.9ms)
+Rendered _form_attribute (1.4ms)
+Rendered _form_association_header (5.2ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_association_record (20.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+  [4;35;1mStore Load (0.3ms)[0m   [0mSELECT * FROM `stores` [0m
+Rendered _form_association_footer (5.1ms)
+Rendered _horizontal_subform (36.5ms)
+Rendered _form_association (40.6ms)
+Rendered _form (282.6ms)
+Rendered _create_form (293.0ms)
+Rendered _messages (1.3ms)
+Rendered _list_inline_adapter (7.7ms)
+Completed in 355ms (View: 12, DB: 0) | 200 OK [http://localhost/aisles/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#create (for 127.0.0.1 at 2009-03-28 22:23:29) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "associated_id"=>"1", "record"=>{"items"=>{"1238293327374"=>{"name"=>"beer", "category"=>{"id"=>""}, "price"=>"3838", "unit_of_measure"=>"beer", "description"=>"beer"}}, "number"=>"2332", "store"=>{"address1"=>"ddd", "city"=>"ccc", "name"=>"www", "address2"=>"ddd", "zip"=>"", "geoip"=>"171716", "state"=>""}, "description"=>"beer", "comment"=>"beer"}}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mCategory Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering on_create
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_association_header (25.4ms)
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered _form_attribute (3.3ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (16.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.7ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_record (12.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (aisle_id IS NULL) [0m
+Rendered _form_association_footer (5.6ms)
+Rendered _horizontal_subform (143.4ms)
+Rendered _form_association (151.4ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_association_header (3.8ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form_association_record (17.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+  [4;35;1mStore Load (0.2ms)[0m   [0mSELECT * FROM `stores` [0m
+Rendered _form_association_footer (3.9ms)
+Rendered _horizontal_subform (26.6ms)
+Rendered _form_association (29.3ms)
+Rendered _form (202.3ms)
+Rendered _create_form (214.6ms)
+Rendered _messages (1.3ms)
+Completed in 409ms (View: 320, DB: 5) | 200 OK [http://localhost/aisles]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAisle Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#create (for 127.0.0.1 at 2009-03-28 22:23:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "associated_id"=>"1", "record"=>{"items"=>{"1238293409532"=>{"name"=>"beer", "category"=>{"id"=>"1"}, "price"=>"3838", "unit_of_measure"=>"beer", "description"=>"beer"}, "1238293409553"=>{"name"=>"", "category"=>{"id"=>"2"}, "price"=>"", "unit_of_measure"=>"", "description"=>""}}, "number"=>"2332", "store"=>{"address1"=>"ddd", "city"=>"ccc", "name"=>"www", "address2"=>"ddd", "zip"=>"", "geoip"=>"171716", "state"=>""}, "description"=>"beer", "comment"=>"beer"}}
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mCategory Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mStore Create (0.4ms)[0m   [0;1mINSERT INTO `stores` (`name`, `address1`, `city`, `address2`, `zip`, `updated_at`, `geoip`, `state`, `created_at`) VALUES('www', 'ddd', 'ccc', 'ddd', NULL, '2009-03-29 02:23:46', 171716, NULL, '2009-03-29 02:23:46')[0m
+  [4;35;1mAisle Create (0.3ms)[0m   [0mINSERT INTO `aisles` (`updated_at`, `number`, `description`, `store_id`, `comment`, `created_at`) VALUES('2009-03-29 02:23:46', 2332, 'beer', 2, 'beer', '2009-03-29 02:23:46')[0m
+  [4;36;1mItem Create (353.5ms)[0m   [0;1mINSERT INTO `items` (`item_id`, `name`, `updated_at`, `price`, `aisle_id`, `description`, `category_id`, `unit_of_measure`, `created_at`) VALUES(NULL, 'beer', '2009-03-29 02:23:46', 3838.0, 101, 'beer', 1, 'beer', '2009-03-29 02:23:46')[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`item_id`, `name`, `updated_at`, `price`, `aisle_id`, `description`, `category_id`, `unit_of_measure`, `created_at`) VALUES(NULL, NULL, '2009-03-29 02:23:46', NULL, 101, NULL, 2, NULL, '2009-03-29 02:23:46')[0m
+  [4;36;1mSQL (23.6ms)[0m   [0;1mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (5.2ms)
+Rendered _list_record (23.1ms)
+Rendered _messages (1.4ms)
+Completed in 655ms (View: 150, DB: 384) | 200 OK [http://localhost/aisles?associated_id=1&authenticity_token=GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI%3D]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAisle Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aisles`[0m
+
+
+Processing AislesController#nested (for 127.0.0.1 at 2009-03-28 22:23:58) [GET]
+  Parameters: {"associations"=>"items", "authenticity_token"=>"GUvJ2T3IlqJSIiRSVNW17a56q2FMcy6h56Cqa5Lb1iI=", "id"=>"101", "associated_id"=>"1"}
+  [4;35;1mStore Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mAisle Load (0.5ms)[0m   [0;1mSELECT * FROM `aisles` WHERE (`aisles`.`id` = 101) [0m
+Rendering template within layouts/application
+  [4;35;1mItem Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+
+ActionView::TemplateError (undefined method `render_component' for #<ActionView::Base:0xb70bd698>) on line #39 of vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:
+36:           :constraints => @constraints,
+37:           :conditions => association.options[:conditions],
+38:           :label => h(@label),
+39:           :params => {:nested => true, :parent_column => column_name, :parent_model => association.active_record}
+40:         ), binding
+41:       end
+42:     end
+
+    vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:39:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml_locals_nested_object'
+    vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:11:in `each'
+    vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:11:in `_run_rhtml_vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml_locals_nested_object'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.2ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)

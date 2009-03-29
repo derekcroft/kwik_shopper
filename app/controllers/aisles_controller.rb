@@ -1,5 +1,3 @@
 class AislesController < ApplicationController
-  def index
-    
-  end
+  active_scaffold :aisle
 end
