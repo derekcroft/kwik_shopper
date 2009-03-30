@@ -1,9 +1,9 @@
 class CreateAisles < ActiveRecord::Migration
   def self.up
     create_table :aisles do |t|
+      t.string :name, :description
       t.integer :number
-      t.string :store_id
-      t.string :description
+      t.integer :store_id
       t.string :comment
       t.timestamps
     end

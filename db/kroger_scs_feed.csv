@@ -1,96 +1,96 @@
-Product Name,Aisle,Category,Price,Store
-Air Freshener,9,Cleaning,$1.05,Kroger - SCS
-Aluminum Foil,2,Kitchen,$1.05,Kroger - SCS
-ink pens ,8,art supplies ,$3.99,Kroger - SCS
-crayons,8,art supplies,$1.25,Kroger - SCS
-poster paint,8,art supplies,$2.99,Kroger - SCS
-oil filter ,9,automotive ,$3.45,Kroger - SCS
-jumper cables,10,automotive ,$12.89,Kroger - SCS
-baby food,7,baby,$0.89,Kroger - SCS
-baby formula,7,baby,$10.99,Kroger - SCS
-diapers ,7,baby,$15.99,Kroger - SCS
-doughnuts,1,bakery fresh ,$0.89,Kroger - SCS
-frozen pies ,12,bakery frozen,$7.99,Kroger - SCS
-cookie sheet ,6,bakeware,$5.99,Kroger - SCS
-flour,6,baking needs,$3.56,Kroger - SCS
-sugar ,6,baking needs,$4.56,Kroger - SCS
-Bandages,8,medical supplies,$3.45,Kroger - SCS
-BBQ sauce ,5,BBQ supplies,$2.34,Kroger - SCS
-bacon ,5,meat ,$1.99,Kroger - SCS
-bar soap ,17,personal products,$1.25,Kroger - SCS
-bath powder,17,personal products,$3.99,Kroger - SCS
-beans,4,bbq supplies,$2.35,Kroger - SCS
-beer keg ,12,party supplies,$39.99,Kroger - SCS
-book paperback,19,news,$3.55,Kroger - SCS
-frozen dinners ,13,frozen foods,$4.55,Kroger - SCS
-bread crums,6,dry goods,$2.99,Kroger - SCS
-butter,19,dairy ,$1.45,Kroger - SCS
-cake mixes,6,baking needs,$3.55,Kroger - SCS
-candies,9,baking ,$1.99,Kroger - SCS
-kitkat ,19,dry grocery ,$4.99,Kroger - SCS
-spam ,4,meat,$2.99,Kroger - SCS
-cheese ,19,dairy ,$2.43,Kroger - SCS
-cigarettes,1,dry grocery ,$9.99,Kroger - SCS
-cigars,1,dry grocery ,$3.67,Kroger - SCS
-coffee,5,dry grocery ,$5.90,Kroger - SCS
-ketchup ,5,dry grocery ,$2.09,Kroger - SCS
-cones,14,dry grocery ,$1.99,Kroger - SCS
-cookies ,11,dry grocery ,$3.29,Kroger - SCS
-cookware,6,dry grocery ,$2.30,Kroger - SCS
-lipstick ,15,comestics ,$1.09,Kroger - SCS
-cotton balls,16,personal goods,$2.34,Kroger - SCS
-crackers,11,dry grocery ,$2.03,Kroger - SCS
-croutons,6,dry grocery ,$1.45,Kroger - SCS
-deodorant,18,personal goods ,$2.03,Kroger - SCS
-frozen pie ,13,frozen bakery ,$3.54,Kroger - SCS
-detergent,8,laundry ,$4.55,Kroger - SCS
-dishwaser detergent ,8,kitchen supplies ,$6.99,Kroger - SCS
-distilled water,12,kitchen supplies,$2.33,Kroger - SCS
-dog food,15,pet supplies ,$11.95,Kroger - SCS
-dried bananas,6,dried food ,$1.22,Kroger - SCS
-eggs,19,dairy ,$1.09,Kroger - SCS
-ethnic food,4,dry grocery ,$3.11,Kroger - SCS
-evaporated milk,6,dairy ,$2.76,Kroger - SCS
-bandaids,1,first aid ,$2.12,Kroger - SCS
-floor cleaner ,8,kitchen supplies ,$4.55,Kroger - SCS
-floor wax,8,kitchen supplies ,$6.55,Kroger - SCS
-foot powder ,16,personal goods,$2.98,Kroger - SCS
-frozen dinner,13,frozen foods,$3.21,Kroger - SCS
-frozen vegtables ,12,frozen foods,$3.45,Kroger - SCS
-fruit canned ,3,dry grocery ,$2.34,Kroger - SCS
-apples - fresh ,1,produce ,$0.79,Kroger - SCS
-bananas,1,produce ,$0.98,Kroger - SCS
-grapes ,1,produce ,$0.89,Kroger - SCS
-furniture polish ,9,household goods,$3.23,Kroger - SCS
-pizza slicer ,6,kitchen supplies ,$4.99,Kroger - SCS
-jello mix,3,dry grocery ,$1.02,Kroger - SCS
-shampoo,17,personal goods,$1.98,Kroger - SCS
-honey ,2,dry grocery ,$3.20,Kroger - SCS
-panty hose ,18,,$3.99,Kroger - SCS
-ice cream ,19,,$2.98,Kroger - SCS
-insectisides ,8,,$2.87,Kroger - SCS
-instant breakfast ,7,,$2.99,Kroger - SCS
-oatmeal ,7,,$3.42,Kroger - SCS
-international foods ,4,,$4.00,Kroger - SCS
-jelly ,2,,$2.99,Kroger - SCS
-juice can ,3,,$2.87,Kroger - SCS
-juice frozen ,13,,$2.56,Kroger - SCS
-light bulbs,9,,$1.09,Kroger - SCS
-lighter fluid ,2,,$2.98,Kroger - SCS
-macaroni,5,,$1.99,Kroger - SCS
-magazines ,19,,$4.95,Kroger - SCS
-marshmellows,3,,$2.99,Kroger - SCS
-marshmellow creme ,6,,$3.02,Kroger - SCS
-matches ,2,,$1.99,Kroger - SCS
-mayonnaise ,5,,$2.12,Kroger - SCS
-milk ,13,,$2.09,Kroger - SCS
-mop ,8,,$3.99,Kroger - SCS
-mouthwash ,18,,$2.98,Kroger - SCS
-mustard,5,,$3.23,Kroger - SCS
-napkins ,14,,$5.99,Kroger - SCS
-chopped nuts ,6,,$2.13,Kroger - SCS
-nuts snack,14,,$2.99,Kroger - SCS
-olive oil ,6,,$5.44,Kroger - SCS
-olives ,5,,$3.33,Kroger - SCS
-oven cleaner ,9,,$4.99,Kroger - SCS
-pancake mix ,6,,$4.59,Kroger - SCS
+"Product Name","Aisle","Category","Price","Store"
+"Air Freshener",9,"Cleaning",1.05,"Kroger - SCS"
+"Aluminum Foil",2,"Kitchen",1.05,"Kroger - SCS"
+"ink pens ",8,"art supplies ",3.99,"Kroger - SCS"
+"crayons",8,"art supplies",1.25,"Kroger - SCS"
+"poster paint",8,"art supplies",2.99,"Kroger - SCS"
+"oil filter ",9,"automotive ",3.45,"Kroger - SCS"
+"jumper cables",10,"automotive ",12.89,"Kroger - SCS"
+"baby food",7,"baby",0.89,"Kroger - SCS"
+"baby formula",7,"baby",10.99,"Kroger - SCS"
+"diapers ",7,"baby",15.99,"Kroger - SCS"
+"doughnuts",1,"bakery fresh ",0.89,"Kroger - SCS"
+"frozen pies ",12,"bakery frozen",7.99,"Kroger - SCS"
+"cookie sheet ",6,"bakeware",5.99,"Kroger - SCS"
+"flour",6,"baking needs",3.56,"Kroger - SCS"
+"sugar ",6,"baking needs",4.56,"Kroger - SCS"
+"Bandages",8,"medical supplies",3.45,"Kroger - SCS"
+"BBQ sauce ",5,"BBQ supplies",2.34,"Kroger - SCS"
+"bacon ",5,"meat ",1.99,"Kroger - SCS"
+"bar soap ",17,"personal products",1.25,"Kroger - SCS"
+"bath powder",17,"personal products",3.99,"Kroger - SCS"
+"beans",4,"bbq supplies",2.35,"Kroger - SCS"
+"beer keg ",12,"party supplies",39.99,"Kroger - SCS"
+"book paperback",19,"news",3.55,"Kroger - SCS"
+"frozen dinners ",13,"frozen foods",4.55,"Kroger - SCS"
+"bread crums",6,"dry goods",2.99,"Kroger - SCS"
+"butter",19,"dairy ",1.45,"Kroger - SCS"
+"cake mixes",6,"baking needs",3.55,"Kroger - SCS"
+"candies",9,"baking ",1.99,"Kroger - SCS"
+"kitkat ",19,"dry grocery ",4.99,"Kroger - SCS"
+"spam ",4,"meat",2.99,"Kroger - SCS"
+"cheese ",19,"dairy ",2.43,"Kroger - SCS"
+"cigarettes",1,"dry grocery ",9.99,"Kroger - SCS"
+"cigars",1,"dry grocery ",3.67,"Kroger - SCS"
+"coffee",5,"dry grocery ",5.90,"Kroger - SCS"
+"ketchup ",5,"dry grocery ",2.09,"Kroger - SCS"
+"cones",14,"dry grocery ",1.99,"Kroger - SCS"
+"cookies ",11,"dry grocery ",3.29,"Kroger - SCS"
+"cookware",6,"dry grocery ",2.30,"Kroger - SCS"
+"lipstick ",15,"comestics ",1.09,"Kroger - SCS"
+"cotton balls",16,"personal goods",2.34,"Kroger - SCS"
+"crackers",11,"dry grocery ",2.03,"Kroger - SCS"
+"croutons",6,"dry grocery ",1.45,"Kroger - SCS"
+"deodorant",18,"personal goods ",2.03,"Kroger - SCS"
+"frozen pie ",13,"frozen bakery ",3.54,"Kroger - SCS"
+"detergent",8,"laundry ",4.55,"Kroger - SCS"
+"dishwaser detergent ",8,"kitchen supplies ",6.99,"Kroger - SCS"
+"distilled water",12,"kitchen supplies",2.33,"Kroger - SCS"
+"dog food",15,"pet supplies ",11.95,"Kroger - SCS"
+"dried bananas",6,"dried food ",1.22,"Kroger - SCS"
+"eggs",19,"dairy ",1.09,"Kroger - SCS"
+"ethnic food",4,"dry grocery ",3.11,"Kroger - SCS"
+"evaporated milk",6,"dairy ",2.76,"Kroger - SCS"
+"bandaids",1,"first aid ",2.12,"Kroger - SCS"
+"floor cleaner ",8,"kitchen supplies ",4.55,"Kroger - SCS"
+"floor wax",8,"kitchen supplies ",6.55,"Kroger - SCS"
+"foot powder ",16,"personal goods",2.98,"Kroger - SCS"
+"frozen dinner",13,"frozen foods",3.21,"Kroger - SCS"
+"frozen vegtables ",12,"frozen foods",3.45,"Kroger - SCS"
+"fruit canned ",3,"dry grocery ",2.34,"Kroger - SCS"
+"apples - fresh ",1,"produce ",0.79,"Kroger - SCS"
+"bananas",1,"produce ",0.98,"Kroger - SCS"
+"grapes ",1,"produce ",0.89,"Kroger - SCS"
+"furniture polish ",9,"household goods",3.23,"Kroger - SCS"
+"pizza slicer ",6,"kitchen supplies ",4.99,"Kroger - SCS"
+"jello mix",3,"dry grocery ",1.02,"Kroger - SCS"
+"shampoo",17,"personal goods",1.98,"Kroger - SCS"
+"honey ",2,"dry grocery ",3.20,"Kroger - SCS"
+"panty hose ",18,,3.99,"Kroger - SCS"
+"ice cream ",19,,2.98,"Kroger - SCS"
+"insectisides ",8,,2.87,"Kroger - SCS"
+"instant breakfast ",7,,2.99,"Kroger - SCS"
+"oatmeal ",7,,3.42,"Kroger - SCS"
+"international foods ",4,,4.00,"Kroger - SCS"
+"jelly ",2,,2.99,"Kroger - SCS"
+"juice can ",3,,2.87,"Kroger - SCS"
+"juice frozen ",13,,2.56,"Kroger - SCS"
+"light bulbs",9,,1.09,"Kroger - SCS"
+"lighter fluid ",2,,2.98,"Kroger - SCS"
+"macaroni",5,,1.99,"Kroger - SCS"
+"magazines ",19,,4.95,"Kroger - SCS"
+"marshmellows",3,,2.99,"Kroger - SCS"
+"marshmellow creme ",6,,3.02,"Kroger - SCS"
+"matches ",2,,1.99,"Kroger - SCS"
+"mayonnaise ",5,,2.12,"Kroger - SCS"
+"milk ",13,,2.09,"Kroger - SCS"
+"mop ",8,,3.99,"Kroger - SCS"
+"mouthwash ",18,,2.98,"Kroger - SCS"
+"mustard",5,,3.23,"Kroger - SCS"
+"napkins ",14,,5.99,"Kroger - SCS"
+"chopped nuts ",6,,2.13,"Kroger - SCS"
+"nuts snack",14,,2.99,"Kroger - SCS"
+"olive oil ",6,,5.44,"Kroger - SCS"
+"olives ",5,,3.33,"Kroger - SCS"
+"oven cleaner ",9,,4.99,"Kroger - SCS"
+"pancake mix ",6,,4.59,"Kroger - SCS"

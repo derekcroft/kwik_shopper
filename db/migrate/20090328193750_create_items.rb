@@ -1,7 +1,6 @@
 class CreateItems < ActiveRecord::Migration
   def self.up
     create_table :items do |t|
-      t.integer :item_id
       t.string :name, :description
       t.integer :category_id, :aisle_id
       t.float :price
