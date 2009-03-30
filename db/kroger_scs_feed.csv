@@ -1,96 +1,331 @@
-"Product Name","Aisle","Category","Price","Store"
-"Air Freshener",9,"Cleaning",1.05,"Kroger - SCS"
-"Aluminum Foil",2,"Kitchen",1.05,"Kroger - SCS"
-"ink pens ",8,"art supplies ",3.99,"Kroger - SCS"
-"crayons",8,"art supplies",1.25,"Kroger - SCS"
-"poster paint",8,"art supplies",2.99,"Kroger - SCS"
-"oil filter ",9,"automotive ",3.45,"Kroger - SCS"
-"jumper cables",10,"automotive ",12.89,"Kroger - SCS"
-"baby food",7,"baby",0.89,"Kroger - SCS"
-"baby formula",7,"baby",10.99,"Kroger - SCS"
-"diapers ",7,"baby",15.99,"Kroger - SCS"
-"doughnuts",1,"bakery fresh ",0.89,"Kroger - SCS"
-"frozen pies ",12,"bakery frozen",7.99,"Kroger - SCS"
-"cookie sheet ",6,"bakeware",5.99,"Kroger - SCS"
-"flour",6,"baking needs",3.56,"Kroger - SCS"
-"sugar ",6,"baking needs",4.56,"Kroger - SCS"
-"Bandages",8,"medical supplies",3.45,"Kroger - SCS"
-"BBQ sauce ",5,"BBQ supplies",2.34,"Kroger - SCS"
-"bacon ",5,"meat ",1.99,"Kroger - SCS"
-"bar soap ",17,"personal products",1.25,"Kroger - SCS"
-"bath powder",17,"personal products",3.99,"Kroger - SCS"
-"beans",4,"bbq supplies",2.35,"Kroger - SCS"
-"beer keg ",12,"party supplies",39.99,"Kroger - SCS"
-"book paperback",19,"news",3.55,"Kroger - SCS"
-"frozen dinners ",13,"frozen foods",4.55,"Kroger - SCS"
-"bread crums",6,"dry goods",2.99,"Kroger - SCS"
-"butter",19,"dairy ",1.45,"Kroger - SCS"
-"cake mixes",6,"baking needs",3.55,"Kroger - SCS"
-"candies",9,"baking ",1.99,"Kroger - SCS"
-"kitkat ",19,"dry grocery ",4.99,"Kroger - SCS"
-"spam ",4,"meat",2.99,"Kroger - SCS"
-"cheese ",19,"dairy ",2.43,"Kroger - SCS"
-"cigarettes",1,"dry grocery ",9.99,"Kroger - SCS"
-"cigars",1,"dry grocery ",3.67,"Kroger - SCS"
-"coffee",5,"dry grocery ",5.90,"Kroger - SCS"
-"ketchup ",5,"dry grocery ",2.09,"Kroger - SCS"
-"cones",14,"dry grocery ",1.99,"Kroger - SCS"
-"cookies ",11,"dry grocery ",3.29,"Kroger - SCS"
-"cookware",6,"dry grocery ",2.30,"Kroger - SCS"
-"lipstick ",15,"comestics ",1.09,"Kroger - SCS"
-"cotton balls",16,"personal goods",2.34,"Kroger - SCS"
-"crackers",11,"dry grocery ",2.03,"Kroger - SCS"
-"croutons",6,"dry grocery ",1.45,"Kroger - SCS"
-"deodorant",18,"personal goods ",2.03,"Kroger - SCS"
-"frozen pie ",13,"frozen bakery ",3.54,"Kroger - SCS"
-"detergent",8,"laundry ",4.55,"Kroger - SCS"
-"dishwaser detergent ",8,"kitchen supplies ",6.99,"Kroger - SCS"
-"distilled water",12,"kitchen supplies",2.33,"Kroger - SCS"
-"dog food",15,"pet supplies ",11.95,"Kroger - SCS"
-"dried bananas",6,"dried food ",1.22,"Kroger - SCS"
-"eggs",19,"dairy ",1.09,"Kroger - SCS"
-"ethnic food",4,"dry grocery ",3.11,"Kroger - SCS"
-"evaporated milk",6,"dairy ",2.76,"Kroger - SCS"
-"bandaids",1,"first aid ",2.12,"Kroger - SCS"
-"floor cleaner ",8,"kitchen supplies ",4.55,"Kroger - SCS"
-"floor wax",8,"kitchen supplies ",6.55,"Kroger - SCS"
-"foot powder ",16,"personal goods",2.98,"Kroger - SCS"
-"frozen dinner",13,"frozen foods",3.21,"Kroger - SCS"
-"frozen vegtables ",12,"frozen foods",3.45,"Kroger - SCS"
-"fruit canned ",3,"dry grocery ",2.34,"Kroger - SCS"
-"apples - fresh ",1,"produce ",0.79,"Kroger - SCS"
-"bananas",1,"produce ",0.98,"Kroger - SCS"
-"grapes ",1,"produce ",0.89,"Kroger - SCS"
-"furniture polish ",9,"household goods",3.23,"Kroger - SCS"
-"pizza slicer ",6,"kitchen supplies ",4.99,"Kroger - SCS"
-"jello mix",3,"dry grocery ",1.02,"Kroger - SCS"
-"shampoo",17,"personal goods",1.98,"Kroger - SCS"
-"honey ",2,"dry grocery ",3.20,"Kroger - SCS"
-"panty hose ",18,,3.99,"Kroger - SCS"
-"ice cream ",19,,2.98,"Kroger - SCS"
-"insectisides ",8,,2.87,"Kroger - SCS"
-"instant breakfast ",7,,2.99,"Kroger - SCS"
-"oatmeal ",7,,3.42,"Kroger - SCS"
-"international foods ",4,,4.00,"Kroger - SCS"
-"jelly ",2,,2.99,"Kroger - SCS"
-"juice can ",3,,2.87,"Kroger - SCS"
-"juice frozen ",13,,2.56,"Kroger - SCS"
-"light bulbs",9,,1.09,"Kroger - SCS"
-"lighter fluid ",2,,2.98,"Kroger - SCS"
-"macaroni",5,,1.99,"Kroger - SCS"
-"magazines ",19,,4.95,"Kroger - SCS"
-"marshmellows",3,,2.99,"Kroger - SCS"
-"marshmellow creme ",6,,3.02,"Kroger - SCS"
-"matches ",2,,1.99,"Kroger - SCS"
-"mayonnaise ",5,,2.12,"Kroger - SCS"
-"milk ",13,,2.09,"Kroger - SCS"
-"mop ",8,,3.99,"Kroger - SCS"
-"mouthwash ",18,,2.98,"Kroger - SCS"
-"mustard",5,,3.23,"Kroger - SCS"
-"napkins ",14,,5.99,"Kroger - SCS"
-"chopped nuts ",6,,2.13,"Kroger - SCS"
-"nuts snack",14,,2.99,"Kroger - SCS"
-"olive oil ",6,,5.44,"Kroger - SCS"
-"olives ",5,,3.33,"Kroger - SCS"
-"oven cleaner ",9,,4.99,"Kroger - SCS"
-"pancake mix ",6,,4.59,"Kroger - SCS"
+Product Name,Aisle,Category,Price,Store,Zip Code
+Air Freshener,9,Cleaning,1.05,Kroger,48080
+Aluminum Foil,2,Kitchen,1.05,Kroger,48080
+apples - fresh ,1,produce ,0.79,Kroger,48080
+baby food,7,baby,0.89,Kroger,48080
+baby formula,7,baby,10.99,Kroger,48080
+bacon ,5,meat ,1.99,Kroger,48080
+bananas,1,produce ,0.98,Kroger,48080
+Bandages,8,medical supplies,3.45,Kroger,48080
+bandaids,1,first aid ,2.12,Kroger,48080
+bar soap ,17,personal products,1.25,Kroger,48080
+bath powder,17,personal products,3.99,Kroger,48080
+Bath Tissue,16,,3.29,Kroger,48080
+BBQ sauce ,5,BBQ supplies,2.34,Kroger,48080
+beans,4,bbq supplies,2.35,Kroger,48080
+beer keg ,12,party supplies,39.99,Kroger,48080
+book paperback,19,news,3.55,Kroger,48080
+bread crums,6,dry goods,2.99,Kroger,48080
+butter,19,dairy ,1.45,Kroger,48080
+cake mixes,6,baking needs,3.55,Kroger,48080
+candies,9,baking ,1.99,Kroger,48080
+Canned Vegetables,3,,4.59,Kroger,48080
+cheese ,19,dairy ,2.43,Kroger,48080
+chopped nuts ,6,,2.13,Kroger,48080
+cigarettes,1,dry grocery ,9.99,Kroger,48080
+cigars,1,dry grocery ,3.67,Kroger,48080
+coffee,5,dry grocery ,5.90,Kroger,48080
+cones,14,dry grocery ,1.99,Kroger,48080
+cookie sheet ,6,bakeware,5.99,Kroger,48080
+cookies ,11,dry grocery ,3.29,Kroger,48080
+cookware,6,dry grocery ,2.30,Kroger,48080
+cotton balls,16,personal goods,2.34,Kroger,48080
+crackers,11,dry grocery ,2.03,Kroger,48080
+crayons,8,art supplies,1.25,Kroger,48080
+croutons,6,dry grocery ,1.45,Kroger,48080
+Cups,14,,1.39,Kroger,48080
+deodorant,18,personal goods ,2.03,Kroger,48080
+detergent,8,laundry ,4.55,Kroger,48080
+diapers ,7,baby,15.99,Kroger,48080
+dishwaser detergent ,8,kitchen supplies ,6.99,Kroger,48080
+distilled water,12,kitchen supplies,2.33,Kroger,48080
+dog food,15,pet supplies ,11.95,Kroger,48080
+doughnuts,1,bakery fresh ,0.89,Kroger,48080
+Dr. Scholl's ,16,,2.50,Kroger,48080
+dried bananas,6,dried food ,1.22,Kroger,48080
+eggs,19,dairy ,1.09,Kroger,48080
+ethnic food,4,dry grocery ,3.11,Kroger,48080
+evaporated milk,6,dairy ,2.76,Kroger,48080
+Facial ,16,,2.99,Kroger,48080
+floor cleaner ,8,kitchen supplies ,4.55,Kroger,48080
+floor wax,8,kitchen supplies ,6.55,Kroger,48080
+flour,6,baking needs,3.56,Kroger,48080
+foot powder ,16,personal goods,2.98,Kroger,48080
+frozen dinner,13,frozen foods,3.21,Kroger,48080
+frozen dinners ,13,frozen foods,4.55,Kroger,48080
+frozen pie ,13,frozen bakery ,3.54,Kroger,48080
+frozen pies ,12,bakery frozen,7.99,Kroger,48080
+Frozen Pizza,13,,6.99,Kroger,48080
+Frozen Vegetables,12,,3.49,Kroger,48080
+frozen vegtables ,12,frozen foods,3.45,Kroger,48080
+fruit canned ,3,dry grocery ,2.34,Kroger,48080
+furniture polish ,9,household goods,3.23,Kroger,48080
+grapes ,1,produce ,0.89,Kroger,48080
+honey ,2,dry grocery ,3.20,Kroger,48080
+ice cream ,19,,2.98,Kroger,48080
+Ice Cream Toppings,14,,9.18,Kroger,48080
+ink pens ,8,art supplies ,3.99,Kroger,48080
+insectisides ,8,,2.87,Kroger,48080
+instant breakfast ,7,,2.99,Kroger,48080
+international foods ,4,,4.00,Kroger,48080
+jello mix,3,dry grocery ,1.02,Kroger,48080
+jelly ,2,,2.99,Kroger,48080
+juice can ,3,,2.87,Kroger,48080
+juice frozen ,13,,2.56,Kroger,48080
+jumper cables,10,automotive ,12.89,Kroger,48080
+ketchup ,5,dry grocery ,2.09,Kroger,48080
+kitkat ,19,dry grocery ,4.99,Kroger,48080
+Kool Aid,14,,3.49,Kroger,48080
+light bulbs,9,,1.09,Kroger,48080
+lighter fluid ,2,,2.98,Kroger,48080
+lipstick ,15,comestics ,1.09,Kroger,48080
+macaroni,5,,1.99,Kroger,48080
+magazines ,19,,4.95,Kroger,48080
+marshmellow creme ,6,,3.02,Kroger,48080
+marshmellows,3,,2.99,Kroger,48080
+matches ,2,,1.99,Kroger,48080
+mayonnaise ,5,,2.12,Kroger,48080
+milk ,13,,2.09,Kroger,48080
+mop ,8,,3.99,Kroger,48080
+mouthwash ,18,,2.98,Kroger,48080
+mustard,5,,3.23,Kroger,48080
+napkins ,14,,5.99,Kroger,48080
+nuts snack,14,,2.99,Kroger,48080
+oatmeal ,7,,3.42,Kroger,48080
+oil filter ,9,automotive ,3.45,Kroger,48080
+olive oil ,6,,5.44,Kroger,48080
+olives ,5,,3.33,Kroger,48080
+oven cleaner ,9,,4.99,Kroger,48080
+pancake mix ,6,,4.59,Kroger,48080
+panty hose ,18,,3.99,Kroger,48080
+Paper Towels,16,,1.99,Kroger,48080
+Pasta,5,,2.59,Kroger,48080
+Peanut Butter,2,,1.29,Kroger,48080
+Pet Food,15,,7.99,Kroger,48080
+Pickles,5,,1.99,Kroger,48080
+Pie Filling ,6,,4.00,Kroger,48080
+Pimento,3,,2.99,Kroger,48080
+Pizza Mix,4,,1.39,Kroger,48080
+pizza slicer ,6,kitchen supplies ,4.99,Kroger,48080
+Plastic Forks,14,,1.11,Kroger,48080
+Plastic Spoons,14,,1.11,Kroger,48080
+Plastic Wrap,2,,3.29,Kroger,48080
+Plates,14,,2.99,Kroger,48080
+Pop,11,,2.00,Kroger,48080
+Popcorn,14,,1.50,Kroger,48080
+poster paint,8,art supplies,2.99,Kroger,48080
+Potato Chips,10,,4.29,Kroger,48080
+Potatoes,4,,1.25,Kroger,48080
+Powdered Milk,6,,1.99,Kroger,48080
+Pudding,3,,2.53,Kroger,48080
+Raisins,6,,0.99,Kroger,48080
+Relish,5,,1.20,Kroger,48080
+Rice,4,,3.49,Kroger,48080
+Rubbermaid,8,,2.50,Kroger,48080
+Salad Dressing,5,,1.20,Kroger,48080
+Salt,6,,0.80,Kroger,48080
+Sanitary Napkins,18,,1.00,Kroger,48080
+Sauce/Gravy,3,,2.39,Kroger,48080
+Sauerkraut,3,,1.20,Kroger,48080
+School Supplies ,8,,1.20,Kroger,48080
+Scotch Tape,8,,1.59,Kroger,48080
+shampoo,17,personal goods,1.98,Kroger,48080
+Shoe Care,16,,3.99,Kroger,48080
+Shoe Polish,16,,1.99,Kroger,48080
+Shoe Strings ,16,,1.29,Kroger,48080
+Shortening,6,,3.29,Kroger,48080
+Snack Crackers,11,,2.49,Kroger,48080
+Soft Drinks,11,,3.56,Kroger,48080
+Soup,4,,1.99,Kroger,48080
+Spaghetti,5,,2.53,Kroger,48080
+spam ,4,meat,2.99,Kroger,48080
+Spices,6,,3.10,Kroger,48080
+Starch,6,,1.10,Kroger,48080
+Straws,14,,0.99,Kroger,48080
+Stuffing,4,,2.49,Kroger,48080
+sugar ,6,baking needs,4.56,Kroger,48080
+sugar ,6,,1.30,Kroger,48080
+Syrups,6,,2.59,Kroger,48080
+Table Napkins,14,,1.00,Kroger,48080
+Tape,8,,1.59,Kroger,48080
+Tea,5,,2.99,Kroger,48080
+Tissues,14,,2.42,Kroger,48080
+Toilet Bowl Cleaner,9,,1.47,Kroger,48080
+Tomato Paste,3,,3.67,Kroger,48080
+Tomato Sauce,3,,1.45,Kroger,48080
+Toothbrush,18,,3.29,Kroger,48080
+Toothpaste/Brushes,18,,3.50,Kroger,48080
+Toothpicks,14,,2.59,Kroger,48080
+Towels,16,,3.49,Kroger,48080
+Trash Bags,2,,1.39,Kroger,48080
+Tuna,4,,1.39,Kroger,48080
+Vinegar,6,,1.99,Kroger,48080
+Vitamins,OTC,,7.00,Kroger,48080
+Wax Paper,2,,2.39,Kroger,48080
+Window Cleaner,9,,3.99,Kroger,48080
+Wine ,12,,25.99,Kroger,48080
+Air Freshener,9,Cleaning,0.80,Meijer,48066
+Aluminum Foil,2,Kitchen,0.80,Meijer,48066
+apples - fresh ,1,produce ,0.54,Meijer,48066
+baby food,7,baby,0.64,Meijer,48066
+baby formula,7,baby,10.74,Meijer,48066
+bacon ,5,meat ,1.74,Meijer,48066
+bananas,1,produce ,0.73,Meijer,48066
+Bandages,8,medical supplies,3.20,Meijer,48066
+bandaids,1,first aid ,1.87,Meijer,48066
+bar soap ,17,personal products,1.00,Meijer,48066
+bath powder,17,personal products,3.74,Meijer,48066
+Bath Tissue,16,,3.04,Meijer,48066
+BBQ sauce ,5,BBQ supplies,2.09,Meijer,48066
+beans,4,bbq supplies,2.10,Meijer,48066
+beer keg ,12,party supplies,39.74,Meijer,48066
+book paperback,19,news,3.30,Meijer,48066
+bread crums,6,dry goods,2.74,Meijer,48066
+butter,19,dairy ,1.20,Meijer,48066
+cake mixes,6,baking needs,3.30,Meijer,48066
+candies,9,baking ,1.74,Meijer,48066
+Canned Vegetables,3,,4.34,Meijer,48066
+cheese ,19,dairy ,2.18,Meijer,48066
+chopped nuts ,6,,1.88,Meijer,48066
+cigarettes,1,dry grocery ,9.74,Meijer,48066
+cigars,1,dry grocery ,3.42,Meijer,48066
+coffee,5,dry grocery ,5.65,Meijer,48066
+cones,14,dry grocery ,1.74,Meijer,48066
+cookie sheet ,6,bakeware,5.74,Meijer,48066
+cookies ,11,dry grocery ,3.04,Meijer,48066
+cookware,6,dry grocery ,2.05,Meijer,48066
+cotton balls,16,personal goods,2.09,Meijer,48066
+crackers,11,dry grocery ,1.78,Meijer,48066
+crayons,8,art supplies,1.00,Meijer,48066
+croutons,6,dry grocery ,1.20,Meijer,48066
+Cups,14,,1.14,Meijer,48066
+deodorant,18,personal goods ,1.78,Meijer,48066
+detergent,8,laundry ,4.30,Meijer,48066
+diapers ,7,baby,15.74,Meijer,48066
+dishwaser detergent ,8,kitchen supplies ,6.74,Meijer,48066
+distilled water,12,kitchen supplies,2.08,Meijer,48066
+dog food,15,pet supplies ,11.70,Meijer,48066
+doughnuts,1,bakery fresh ,0.64,Meijer,48066
+Dr. Scholl's ,16,,2.25,Meijer,48066
+dried bananas,6,dried food ,0.97,Meijer,48066
+eggs,19,dairy ,0.84,Meijer,48066
+ethnic food,4,dry grocery ,2.86,Meijer,48066
+evaporated milk,6,dairy ,2.51,Meijer,48066
+Facial ,16,,2.74,Meijer,48066
+floor cleaner ,8,kitchen supplies ,4.30,Meijer,48066
+floor wax,8,kitchen supplies ,6.30,Meijer,48066
+flour,6,baking needs,3.31,Meijer,48066
+foot powder ,16,personal goods,2.73,Meijer,48066
+frozen dinner,13,frozen foods,2.96,Meijer,48066
+frozen dinners ,13,frozen foods,4.30,Meijer,48066
+frozen pie ,13,frozen bakery ,3.29,Meijer,48066
+frozen pies ,12,bakery frozen,7.74,Meijer,48066
+Frozen Pizza,13,,6.74,Meijer,48066
+Frozen Vegetables,12,,3.24,Meijer,48066
+frozen vegtables ,12,frozen foods,3.20,Meijer,48066
+fruit canned ,3,dry grocery ,2.09,Meijer,48066
+furniture polish ,9,household goods,2.98,Meijer,48066
+grapes ,1,produce ,0.64,Meijer,48066
+honey ,2,dry grocery ,2.95,Meijer,48066
+ice cream ,19,,2.73,Meijer,48066
+Ice Cream Toppings,14,,8.93,Meijer,48066
+ink pens ,8,art supplies ,3.74,Meijer,48066
+insectisides ,8,,2.62,Meijer,48066
+instant breakfast ,7,,2.74,Meijer,48066
+international foods ,4,,3.75,Meijer,48066
+jello mix,3,dry grocery ,0.77,Meijer,48066
+jelly ,2,,2.74,Meijer,48066
+juice can ,3,,2.62,Meijer,48066
+juice frozen ,13,,2.31,Meijer,48066
+jumper cables,10,automotive ,12.64,Meijer,48066
+ketchup ,5,dry grocery ,1.84,Meijer,48066
+kitkat ,19,dry grocery ,4.74,Meijer,48066
+Kool Aid,14,,3.24,Meijer,48066
+light bulbs,9,,0.84,Meijer,48066
+lighter fluid ,2,,2.73,Meijer,48066
+lipstick ,15,comestics ,0.84,Meijer,48066
+macaroni,5,,1.74,Meijer,48066
+magazines ,19,,4.70,Meijer,48066
+marshmellow creme ,6,,2.77,Meijer,48066
+marshmellows,3,,2.74,Meijer,48066
+matches ,2,,1.74,Meijer,48066
+mayonnaise ,5,,1.87,Meijer,48066
+milk ,13,,1.84,Meijer,48066
+mop ,8,,3.74,Meijer,48066
+mouthwash ,18,,2.73,Meijer,48066
+mustard,5,,2.98,Meijer,48066
+napkins ,14,,5.74,Meijer,48066
+nuts snack,14,,2.74,Meijer,48066
+oatmeal ,7,,3.17,Meijer,48066
+oil filter ,9,automotive ,3.20,Meijer,48066
+olive oil ,6,,5.19,Meijer,48066
+olives ,5,,3.08,Meijer,48066
+oven cleaner ,9,,4.74,Meijer,48066
+pancake mix ,6,,4.34,Meijer,48066
+panty hose ,18,,3.74,Meijer,48066
+Paper Towels,16,,1.74,Meijer,48066
+Pasta,5,,2.34,Meijer,48066
+Peanut Butter,2,,1.04,Meijer,48066
+Pet Food,15,,7.74,Meijer,48066
+Pickles,5,,1.74,Meijer,48066
+Pie Filling ,6,,3.75,Meijer,48066
+Pimento,3,,2.74,Meijer,48066
+Pizza Mix,4,,1.14,Meijer,48066
+pizza slicer ,6,kitchen supplies ,4.74,Meijer,48066
+Plastic Forks,14,,0.86,Meijer,48066
+Plastic Spoons,14,,0.86,Meijer,48066
+Plastic Wrap,2,,3.04,Meijer,48066
+Plates,14,,2.74,Meijer,48066
+Pop,11,,1.75,Meijer,48066
+Popcorn,14,,1.25,Meijer,48066
+poster paint,8,art supplies,2.74,Meijer,48066
+Potato Chips,10,,4.04,Meijer,48066
+Potatoes,4,,1.00,Meijer,48066
+Powdered Milk,6,,1.74,Meijer,48066
+Pudding,3,,2.28,Meijer,48066
+Raisins,6,,0.74,Meijer,48066
+Relish,5,,0.95,Meijer,48066
+Rice,4,,3.24,Meijer,48066
+Rubbermaid,8,,2.25,Meijer,48066
+Salad Dressing,5,,0.95,Meijer,48066
+Salt,6,,0.55,Meijer,48066
+Sanitary Napkins,18,,0.75,Meijer,48066
+Sauce/Gravy,3,,2.14,Meijer,48066
+Sauerkraut,3,,0.95,Meijer,48066
+School Supplies ,8,,0.95,Meijer,48066
+Scotch Tape,8,,1.34,Meijer,48066
+shampoo,17,personal goods,1.73,Meijer,48066
+Shoe Care,16,,3.74,Meijer,48066
+Shoe Polish,16,,1.74,Meijer,48066
+Shoe Strings ,16,,1.04,Meijer,48066
+Shortening,6,,3.04,Meijer,48066
+Snack Crackers,11,,2.24,Meijer,48066
+Soft Drinks,11,,3.31,Meijer,48066
+Soup,4,,1.74,Meijer,48066
+Spaghetti,5,,2.28,Meijer,48066
+spam ,4,meat,2.74,Meijer,48066
+Spices,6,,2.85,Meijer,48066
+Starch,6,,0.85,Meijer,48066
+Straws,14,,0.74,Meijer,48066
+Stuffing,4,,2.24,Meijer,48066
+sugar ,6,baking needs,4.31,Meijer,48066
+sugar ,6,,1.05,Meijer,48066
+Syrups,6,,2.34,Meijer,48066
+Table Napkins,14,,0.75,Meijer,48066
+Tape,8,,1.34,Meijer,48066
+Tea,5,,2.74,Meijer,48066
+Tissues,14,,2.17,Meijer,48066
+Toilet Bowl Cleaner,9,,1.22,Meijer,48066
+Tomato Paste,3,,3.42,Meijer,48066
+Tomato Sauce,3,,1.20,Meijer,48066
+Toothbrush,18,,3.04,Meijer,48066
+Toothpaste/Brushes,18,,3.25,Meijer,48066
+Toothpicks,14,,2.34,Meijer,48066
+Towels,16,,3.24,Meijer,48066
+Trash Bags,2,,1.14,Meijer,48066
+Tuna,4,,1.14,Meijer,48066
+Vinegar,6,,1.74,Meijer,48066
+Vitamins,OTC,,6.75,Meijer,48066
+Wax Paper,2,,2.14,Meijer,48066
+Window Cleaner,9,,3.74,Meijer,48066
+Wine ,12,,25.74,Meijer,48066
