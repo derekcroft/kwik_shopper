@@ -1,15 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :aisles
-
-  map.resources :stores
-
-  map.resources :categories
-
-  map.resources :items
-
-  map.resources :carts
-
-  map.resources :users
+  map.namespace :admin do |admin|
+    admin.resources :aisles
+    admin.resources :stores
+    admin.resources :categories
+    admin.resources :items
+    admin.resources :carts
+    admin.resources :users
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
 
