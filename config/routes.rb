@@ -1,11 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
   map.namespace :admin do |admin|
-    admin.resources :aisles
-    admin.resources :stores
-    admin.resources :categories
+    admin.resources :aisles, :has_many => :items
+    admin.resources :stores, :has_many => :aisles
+    admin.resources :categories, :has_many => :items
     admin.resources :items
     admin.resources :carts
-    admin.resources :users
+    admin.resources :users, :has_many => :carts
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
