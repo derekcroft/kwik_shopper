@@ -1,0 +1,25 @@
+#sidebar
+  #login
+    %form{ :action => "#" }
+      %input{ :type => "text", :name => "username", :value => "Username" }
+      %input{ :type => "text", :name => "password", :value => "Password" }
+      %input.login-btn{ :type => "image", :src => "images/login-submit.png"  }
+
+  #sidebar-lists
+    = image_tag("paper-arrow.png", :width => "39px", :height => "48px", :alt => "paper icon")
+
+    %h2 My shopping list
+
+    .clear
+
+    %hr.divider
+
+    .sidebar-content
+      #wrapper.shopping-list
+
+        .content
+          / sidebar content in a box sits inside this div
+          = image_tag("get-started-tag.png", :width => "50px", :height => "52px", :alt => "paper icon")
+          %h2 Getting Started
+          .clear
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim congue erat. Aliquam sollicitudin, ligula nec interdum ultricies, diam urna elementum felis, eget lacinia ligula massa et justo.

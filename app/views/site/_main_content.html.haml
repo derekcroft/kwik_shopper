@@ -1,0 +1,28 @@
+#main-content
+  = image_tag("aisle-walker-logo.png", :width => '409px', :height => '157px', :alt => "Aisle Walker: shopping optimized")
+  #main-search
+    %h2 Start building your shopping list
+    %form{ :action => "#" }
+      %fieldset
+        %span
+          %input#search-products.text{ :type => "text", :value => "Enter a product to search for" }
+        %input.btn{ :type => "image", :src => "images/search-submit.png" }
+
+  .content
+    = image_tag("cart.gif", :width => "151px", :height => "130px", :alt => "shopping cart image", :class => "cart")
+    %h2 Optimize your shopping experience
+    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim congue erat. Aliquam sollicitudin, ligula nec interdum ultricies, diam urna elementum felis, eget lacinia ligula massa et justo.
+    .clear
+
+  #connect.content
+    %ul.no-list
+      %li= link_to(image_tag("connect-arrows.gif", :width => "76px", :height => "74px", :alt => " "), "#")
+      %li
+        %h2= link_to("Connect with us", "#")
+      %li.icon= link_to(image_tag("twitter-icon.gif", :width => "60px", :height => "62px", :alt => "connect on twitter"), "#")
+      %li.icon= link_to(image_tag("facebook-icon.gif", :width => "60px", :height => "62px", :alt => "connect on facebook"), "#")
+      %li.icon= link_to(image_tag("youtube-icon.gif", :width => "60px", :height => "62px", :alt => "youtube on twitter"), "#")
+      %li.icon= link_to(image_tag("rss-icon.gif", :width => "60px", :height => "62px", :alt => "rss feed"), "#")
+      %li.icon= link_to(image_tag("stumble-icon.gif", :width => "60px", :height => "62px", :alt => "stumble this page"), "#")
+      %li.icon= link_to(image_tag("digg-icon.gif", :width => "60px", :height => "62px", :alt => "digg this page"), "#")
+    .clear

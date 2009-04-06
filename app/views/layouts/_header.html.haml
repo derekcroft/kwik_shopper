@@ -1,0 +1,11 @@
+= stylesheet_link_tag("styles", :media => "all")
+
+/[if IE 6]
+  = stylesheet_link_tag("ie6-styles", :media => "all")
+
+/[if lt IE 7]
+  = javascript_include_tag("unitpngfix")
+
+/[if IE 7]
+  = stylesheet_link_tag("ie7-styles", :media => "all")
+
