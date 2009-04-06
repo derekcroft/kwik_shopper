@@ -1,0 +1,85 @@
+/* reset */
+
+    * {padding:0; margin:0;}
+    a{text-decoration:none; outline:none;}
+    img{border:none;}
+    table{border-collapse:collapse; border-spacing:0; }
+    fieldset{border:none;}
+
+
+/* general styles */
+
+    .no-list{list-style-type:none;}
+    .clear{clear:both;}
+    a{text-decoration:none;}
+    *{font-family:Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:1em; color:#6b7679;}
+    html, body{height: 100%;}
+    
+    h2{margin:10px 0; font-size:18px;}
+    
+/* main styles */
+
+    body{background:url(../images/background-repeat.gif) #FFF repeat-x; margin:0 auto;}
+    .page-wrapper{width:1100px; margin: 0 auto; padding:0 10px;min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -71px;}
+    hr.divider{width:80%; margin:0 auto; margin-top:5px; margin-bottom:5px;}
+    #wrapper{margin:0 auto;}
+    
+/* main content */
+
+    #main-content{width:738px; float:left;}
+    
+    #main-search{width:590px; margin:0 auto; background:url(../images/square-brackets-1.gif) no-repeat; min-height:175px; margin-bottom:40px;}
+    #main-search h2{text-align:center; padding:25px 0 0 0; display:block; font-size:24px;}
+    #main-search form{width:500px; margin:0 auto;}
+    #main-search input{width:450px; height:30px; font-size:20px;}
+    #main-search input.btn{float:right; margin:-5px 0 0 -15px; position:absolute; width:48px; height:48px;}
+	
+	/* search results */
+	.search-results{width:400px; margin-right:auto; margin-left:60px; margin-top:-2px; border:1px solid #c5d5da; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; border-radius:5px; background:#FFF; padding:0px 10px 10px; font-size:12px;}
+	#main-search .search-results h2{text-align:left; font-size:14px; margin:0 0 10px 0;}
+	#main-search .search-results ul li{padding:5px 0; border-bottom:dashed #c5d5da 1px;position: relative; width:300px;}
+	#main-search .search-results ul li span{position: absolute; right:-80px;}
+	#main-search .search-results ul li span.add{background:url(../images/green-plus.gif) no-repeat; width:15px; height:15px; margin-left:0; position:absolute; right:-100px;}
+    
+    .content{width:714px; margin:0 auto; padding:5px; border: 1px solid #c5d5da; background:#FFF; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; border-radius:5px; margin-top: 15px; margin-bottom:15px;}
+    .content .cart{float:left; margin:5px;}
+    .content p{font-size:16px;}
+    
+    #connect{background:#f1f9fb;}
+    #connect ul li{float:left; display:inline; padding:0 10px;}
+    #connect ul li.icon{padding-top:10px;}
+    #connect ul li h2{font-size:20px; width:100px;}
+
+/* sidebar */
+
+    #sidebar{width:294px; float:left; margin:0 0 0 10px;}
+    
+    #sidebar-lists{background:url(../images/sidebar-top.png) no-repeat;}
+    
+	#login{background:url(../images/login-background.gif) no-repeat; padding:10px 5px 15px 10px; margin:0 0 10px 0;}
+	#login input{width: 100px; height:15px; margin:0 5px; font-size:9px;}
+	#login .login-btn{width:25px; height:25px; margin:0; position:absolute;}
+	
+	#sidebar-lists img{float:left; margin:10px;}
+    #sidebar #sidebar-lists .sidebar-content #wrapper h2, #sidebar-lists h2{margin:15px 0 0 5px; padding: 15px 0; border-bottom:none; width:100%;}
+        
+    .sidebar-content{background:url(../images/sidebar-repeat.png) repeat-y; margin-top:50px; padding:0 10px 0 10px; margin-left:auto; margin-right:auto;}
+	
+	#sidebar .content{background:#FFF; width:254px; margin:0 auto; border:1px solid #c5d5da; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; border-radius:5px; padding:10px;}
+	
+	/* shopping list */
+	
+	#sidebar #sidebar-lists .sidebar-content .shopping-list{list-style-image:url(../images/red-x.gif);}
+	#sidebar #sidebar-lists .sidebar-content .shopping-list{font-size:14px;}
+	#sidebar #sidebar-lists .sidebar-content .shopping-list ul{margin:0 0 10px 25px;}
+	#sidebar #sidebar-lists .sidebar-content .shopping-list ul li{margin:0 0 2px 0;}
+	#sidebar #sidebar-lists .sidebar-content .shopping-list h2{border-bottom:dashed 1px #c5d5da; width:80%; padding:0px; margin:0 0 10px 0;}
+        
+    .generate{text-align:center; background:url(../images/generate-button.gif) no-repeat; margin: 20px 0px 10px 0px; padding:15px 10px 20px;}   
+        
+/* footer */
+
+    #footer{background:url(../images/footer-repeat.gif) repeat-x; font-size:12px;}
+    #footer p{padding:27px 0 29px 0; color:#dae1e4;}
+    #footer, .push{height: 71px;}
+

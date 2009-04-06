@@ -1,0 +1,13 @@
+/* logo */
+
+img.logo{margin-bottom: 50px;}
+
+/* main search */
+
+#main-search form{margin-left: 50px;}
+
+/* search results */
+
+.search-results{margin-left:80px;}
+#main-search .search-results ul li span{position: absolute; right:-60px;}
+	#main-search .search-results ul li span.add{background:url(../images/green-plus.gif) no-repeat; width:15px; height:15px; margin-left:0; position:absolute; right:-80px;}

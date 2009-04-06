@@ -1,0 +1,10 @@
+Instructions for Aisle Walker site
+
+Search Results
+
+To implement the search results place a list inside the div class="search results" H2 exists outside the ul. li requires 2 spans. One around the [Add to Cart] and one with the class="add".
+
+
+Side bar
+
+To implement the sidebar list you must remove the div class="content" from the sidebar and add a plain list with h2 outside ul. The ul had a class of no-list to remove the bullets.
