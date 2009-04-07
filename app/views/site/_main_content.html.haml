@@ -5,7 +5,8 @@
     %form{ :action => "#" }
       %fieldset
         %span
-          %input#search-products.text{ :type => "text", :value => "Enter a product to search for" }
+          = text_field_with_auto_complete(:item, :name, :value => "Enter a product to search for", :size => nil)
+          -# %input#search-products.text{ :type => "text", :value => "Enter a product to search for" }
         %input.btn{ :type => "image", :src => "images/search-submit.png" }
 
   .content
