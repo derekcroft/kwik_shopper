@@ -1,8 +1,18 @@
-<head>
-<%= javascript_include_tag :defaults %>
-<%= active_scaffold_includes %>
-<title> Hello </title>
+<html>
+  <head>
+    <%= javascript_include_tag :defaults %>
+    <%= active_scaffold_includes %>
 
-<%= yield %>
+    <title>AisleWalker Admin</title>
+    <%= render "layouts/header" %>
+  </head>
+  <body id="body">
+    <p><h1>Administration Links</h1></p>
 
-</head>
+    <br><hr><br>
+    <%= yield %>
+    <br><hr><br>
+
+    <%= render "layouts/footer" %>
+  </body>
+</html>
