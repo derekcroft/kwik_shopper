@@ -69,13 +69,17 @@
 	
 	/* shopping list */
 	
-	#sidebar #sidebar-lists .sidebar-content .shopping-list{list-style-image:url(../images/red-x.gif);}
 	#sidebar #sidebar-lists .sidebar-content .shopping-list{font-size:14px;}
-	#sidebar #sidebar-lists .sidebar-content .shopping-list ul{margin:0 0 10px 25px;}
-	#sidebar #sidebar-lists .sidebar-content .shopping-list ul li{margin:0 0 2px 0;}
+	#sidebar #sidebar-lists .sidebar-content .shopping-list ul{margin:0 0 10px 25px; list-style-type:none;}
+	#sidebar #sidebar-lists .sidebar-content .shopping-list ul li{margin:0 0 5px 0;}
+	#sidebar #sidebar-lists .sidebar-content .shopping-list ul li{background-position:left; background-repeat:no-repeat; background-image:url(../images/red-x.png)}
+  #sidebar #sidebar-lists .sidebar-content .shopping-list ul li a{height:100%; width:100%; display:block; padding-left:25px; text-decoration:none;}
+  #sidebar #sidebar-lists .sidebar-content .shopping-list ul li a:link{font-weight:normal; color:#000000;}
+  #sidebar #sidebar-lists .sidebar-content .shopping-list ul li a:hover{font-weight:bold; color:#0000FF;}
+  #sidebar #sidebar-lists .sidebar-content .shopping-list ul li a:active{font-weight:bold; color:#CC0033;}
 	#sidebar #sidebar-lists .sidebar-content .shopping-list h2{border-bottom:dashed 1px #c5d5da; width:80%; padding:0px; margin:0 0 10px 0;}
-        
-    .generate{text-align:center; background:url(../images/generate-button.gif) no-repeat; margin: 20px 0px 10px 0px; padding:15px 10px 20px;}   
+
+  .generate{text-align:center; background:url(../images/generate-button.gif) no-repeat; margin: 20px 0px 10px 0px; padding:15px 10px 20px;}   
         
 /* footer */
 
