@@ -15,7 +15,7 @@ var Iterators = function() {
   Element.addMethods(methods);
 }();
 
-const DEFAULT_SEARCH_TEXT = 'Enter a product to search for';
+var DEFAULT_SEARCH_TEXT = 'Enter a product to search for';
 
 function changeDefaultFieldOnFocus(elem) {
   if (elem.value == DEFAULT_SEARCH_TEXT) {
@@ -45,7 +45,7 @@ function removeItem(itemId) {
 }
 
 function insertItemAndHighlight(listId, itemName) {
-   var list_item_html = '<li><a href="#" onclick="removeItem(ancestors(this)[0].readAttribute(\'item_id\')); return false;">'+itemName+'</a></li>'
+   var list_item_html = '<li><a href="#" onclick="removeItem(this.ancestors()[0].readAttribute(\'item_id\')); return false;">'+itemName+'</a></li>'
    Element.insert(listId, { bottom: list_item_html })
    new Effect.Highlight(listId,{});
    return packShoppingCartIds();
