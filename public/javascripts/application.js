@@ -16,7 +16,16 @@ function changeDefaultFieldOnBlur(elem) {
 }
 
 function addItemToShoppingCart() {
-  var search_box_value = document.getElementById('item_name').value
+  var search_field = document.getElementById('item_name')
+  var search_box_value = search_field.value
   var shopping_cart_item_html = '<li>'+search_box_value+'</li>'
-  Element.insert('shopping-list-content', { bottom: shopping_cart_item_html })
+
+  if (search_box_value != DEFAULT_SEARCH_TEXT) {
+    Element.hide('getting-started')
+    Element.insert('shopping-list-content', { bottom: shopping_cart_item_html })
+    new Effect.Highlight('shopping-list-content',{});
+
+    search_field.value = ''
+    search_field.focus()
+  }
 }
