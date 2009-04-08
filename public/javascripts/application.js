@@ -15,17 +15,24 @@ function changeDefaultFieldOnBlur(elem) {
   }
 }
 
+function insertItemAndHighlight(listId, itemName) {
+   var list_item_html = '<li>'+itemName+'</li>'
+   Element.insert(listId, { bottom: list_item_html })
+   new Effect.Highlight(listId,{});
+}
+
+function clearFieldAndFocus(field) {
+    field.value = ''
+    field.focus()
+}
+
 function addItemToShoppingCart() {
   var search_field = document.getElementById('item_name')
   var search_box_value = search_field.value
-  var shopping_cart_item_html = '<li>'+search_box_value+'</li>'
 
   if (search_box_value != DEFAULT_SEARCH_TEXT) {
     Element.hide('getting-started')
-    Element.insert('shopping-list-content', { bottom: shopping_cart_item_html })
-    new Effect.Highlight('shopping-list-content',{});
-
-    search_field.value = ''
-    search_field.focus()
+    insertItemAndHighlight('shopping-list-content', search_box_value)
+    clearFieldAndFocus(search_field)
   }
 }
