@@ -6,7 +6,7 @@
       %fieldset
         %span
           = text_field_with_auto_complete(:item, :name, :value => "Enter a product to search for", :size => nil, :onfocus => ("if (this.value == 'Enter a product to search for') this.value = ''"), :onblur => ("if (this.value == '') this.value = 'Enter a product to search for'"))
-        = link_to_function(image_tag("search-submit.png"), nil, :class => "btn") { |page| page.toggle 'wrapper' }
+        = link_to_submit_image
 
   .content
     = image_tag("cart.gif", :width => "151px", :height => "130px", :alt => "shopping cart image", :class => "cart")
