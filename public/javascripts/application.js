@@ -45,7 +45,7 @@ function removeItem(itemId) {
 }
 
 function insertItemAndHighlight(listId, itemName) {
-   var list_item_html = '<li><a href="#" onclick="removeItem(this.ancestors()[0].readAttribute(\'item_id\')); return false;">'+itemName+'</a></li>'
+   var list_item_html = '<li><a href="#" onclick="removeItem(Element.up(this).readAttribute(\'item_id\')); return false;">'+itemName+'</a></li>'
    Element.insert(listId, { bottom: list_item_html })
    new Effect.Highlight(listId,{});
    return packShoppingCartIds();
