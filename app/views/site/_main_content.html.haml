@@ -2,7 +2,7 @@
   = image_tag("/images/aisle-walker-logo.png", :width => '409px', :height => '157px', :alt => "Aisle Walker: shopping optimized")
   #main-search
     %h2 Start building your shopping list
-    %form{ :action => "#" }
+    %form{ :action => "#", :onsubmit => "addItemToShoppingCart(); return false;" }
       %fieldset
         %span
           = text_field_with_auto_complete(:item, :name, :value => "Enter a product to search for", :size => nil, :onfocus => 'changeDefaultFieldOnFocus(this)', :onblur => 'changeDefaultFieldOnBlur(this)')

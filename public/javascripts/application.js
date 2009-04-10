@@ -60,7 +60,7 @@ function addItemToShoppingCart() {
   var search_field = document.getElementById('item_name')
   var search_box_value = search_field.value
 
-  if (search_box_value != DEFAULT_SEARCH_TEXT) {
+  if (search_box_value != DEFAULT_SEARCH_TEXT && search_box_value != '') {
     Element.hide('getting-started')
     insertItemAndHighlight('shopping-list-content', search_box_value)
     clearFieldAndFocus(search_field)

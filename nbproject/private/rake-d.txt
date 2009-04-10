@@ -40,6 +40,7 @@ doc\:clobber_rails=Remove rdoc products
 doc\:guides=Generate Rails guides
 doc\:plugins=Generate documentation for all installed plugins
 doc\:plugins\:active_scaffold=Generate documentation for the active_scaffold plugin
+doc\:plugins\:auto_complete=Generate documentation for the auto_complete plugin
 doc\:plugins\:gemsonrails=Generate documentation for the gemsonrails plugin
 doc\:plugins\:haml=Generate documentation for the haml plugin
 doc\:plugins\:scaffolding=Generate documentation for the scaffolding plugin
