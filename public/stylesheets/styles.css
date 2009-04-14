@@ -59,6 +59,7 @@
 	#login{background:url(../images/login-background.gif) no-repeat; padding:10px 5px 15px 10px; margin:0 0 10px 0;}
 	#login input{width: 100px; height:15px; margin:0 5px; font-size:9px;}
 	#login .login-btn{width:25px; height:25px; margin:0; position:absolute;}
+  #login #login-links{font-size:0.75em; font-variant:small-caps; margin-top:5px; margin-left:5px;}
 	
 	#sidebar-lists img{float:left; margin:10px;}
     #sidebar #sidebar-lists .sidebar-content #wrapper h2, #sidebar-lists h2{margin:15px 0 0 5px; padding: 15px 0; border-bottom:none; width:100%;}

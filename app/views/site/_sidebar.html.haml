@@ -4,6 +4,9 @@
       %input{ :type => "text", :name => "username", :value => "Username" }
       %input{ :type => "text", :name => "password", :value => "Password" }
       %input.login-btn{ :type => "image", :src => "/images/login-submit.png"  }
+    #login-links
+      %a.login-link{ :href => signup_path } Create an Account
+      | Forgot Your Password?
 
   #sidebar-lists
     = image_tag("/images/paper-arrow.png", :width => "39px", :height => "48px", :alt => "paper icon")
