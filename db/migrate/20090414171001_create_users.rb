@@ -1,5 +1,6 @@
 class CreateUsers < ActiveRecord::Migration
   def self.up
+    drop_table "users"
     create_table "users", :force => true do |t|
       t.column :login,                     :string, :limit => 40
       t.column :name,                      :string, :limit => 100, :default => '', :null => true
@@ -17,6 +18,6 @@ class CreateUsers < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table "users"
+    #drop_table "users"
   end
 end
