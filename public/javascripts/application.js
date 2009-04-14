@@ -17,15 +17,15 @@ var Iterators = function() {
 
 var DEFAULT_SEARCH_TEXT = 'Enter a product to search for';
 
-function changeDefaultFieldOnFocus(elem) {
-  if (elem.value == DEFAULT_SEARCH_TEXT) {
+function changeDefaultFieldOnFocus(elem, defaultText) {
+  if (elem.value == (defaultText == null ? DEFAULT_SEARCH_TEXT : defaultText)) {
     elem.value = ''
   }
 }
 
-function changeDefaultFieldOnBlur(elem) {
+function changeDefaultFieldOnBlur(elem, defaultText) {
   if (elem.value == '') {
-    elem.value = DEFAULT_SEARCH_TEXT
+    elem.value = (defaultText == null ? DEFAULT_SEARCH_TEXT : defaultText)
   }
 }
 

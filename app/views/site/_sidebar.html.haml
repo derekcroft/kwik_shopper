@@ -1,8 +1,8 @@
 #sidebar
   #login
     - form_tag(:controller => "sessions", :action => "create", :method => :post) do
-      = text_field_tag("username", "Username")
-      = password_field_tag("password", "Password")
+      = text_field_tag("username", "Username", :onfocus => 'changeDefaultFieldOnFocus(this, "Username")', :onblur => 'changeDefaultFieldOnBlur(this, "Username")')
+      = password_field_tag("password", "password", :onfocus => "this.value = ''")
       = image_submit_tag("login-submit.png", :class => "login-btn")
     #login-links
       %a.login-link{ :href => signup_path } Create an Account
