@@ -1,9 +1,9 @@
 #sidebar
   #login
-    %form{ :action => "#" }
-      %input{ :type => "text", :name => "username", :value => "Username" }
-      %input{ :type => "text", :name => "password", :value => "Password" }
-      %input.login-btn{ :type => "image", :src => "/images/login-submit.png"  }
+    - form_tag(:controller => "sessions", :action => "create", :method => :post) do
+      = text_field_tag("username", "Username")
+      = password_field_tag("password", "Password")
+      = image_submit_tag("login-submit.png", :class => "login-btn")
     #login-links
       %a.login-link{ :href => signup_path } Create an Account
       | Forgot Your Password?
