@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  usda_food_group_id: 1
+  ndb_number: 1
+  fdgrp_cd: 1
+  long_desc: MyString
+  short_desc: MyString
+  shrt_desc: MyString
+  comname: MyString
+  manufacname: MyString
+  ref_desc: MyString
+  gmwt_1: 1.5
+  gmwt_desc1: MyString
+  gmwat_2: 1.5
+  gmwt_desc2: MyString
+
+two:
+  usda_food_group_id: 1
+  ndb_number: 1
+  fdgrp_cd: 1
+  long_desc: MyString
+  short_desc: MyString
+  shrt_desc: MyString
+  comname: MyString
+  manufacname: MyString
+  ref_desc: MyString
+  gmwt_1: 1.5
+  gmwt_desc1: MyString
+  gmwat_2: 1.5
+  gmwt_desc2: MyString

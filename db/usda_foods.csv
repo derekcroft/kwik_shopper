@@ -1,4 +1,4 @@
-ndb_number,fdgrp_cd,long_desc,short_desc,shrt_desc,comname,manufacname,ref_desc,gmwt_1,gmwt_desc1,gmwat_2,gmwt_desc2
+ndb_number,fdgrp_cd,long_desc,short_desc,name,comname,manufacname,ref_desc,gmwt_1,gmwt_desc1,gmwat_2,gmwt_desc2
 1001,100,"Butter, salted","BUTTER,WITH SALT","BUTTER,WITH SALT",,,,227,1 cup,14.2,1 tbsp
 1002,100,"Butter, whipped, with salt","BUTTER,WHIPPED,WITH SALT","BUTTER,WHIPPED,WITH SALT",,,,151,1 cup,9.4,1 tbsp
 1003,100,"Butter oil, anhydrous","BUTTER OIL,ANHYDROUS","BUTTER OIL,ANHYDROUS",,,,205,1 cup,12.8,1 tbsp

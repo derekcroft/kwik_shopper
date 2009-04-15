@@ -1,8 +1,11 @@
+auth\:gen\:site_key=Generates config/initializers/site_keys.rb
 db\:abort_if_pending_migrations=Raises an error if there are pending migrations
 db\:charset=Retrieves the charset for the current environment's database
 db\:collation=Retrieves the collation for the current environment's database
 db\:create=Create the database defined in config/database.yml for the current RAILS_ENV
 db\:create\:all=Create all the local databases defined in config/database.yml
+db\:data\:import\:kroger=Import from Kroger CSV
+db\:data\:import\:usda=Import USDA foods and food groups
 db\:drop=Drops the database for the current RAILS_ENV
 db\:drop\:all=Drops all the local databases defined in config/database.yml
 db\:fixtures\:identify=Search for a fixture given a LABEL or ID. Specify an alternative path (eg. spec/fixtures) using FIXTURES_PATH=spec/fixtures.
@@ -43,6 +46,7 @@ doc\:plugins\:active_scaffold=Generate documentation for the active_scaffold plu
 doc\:plugins\:auto_complete=Generate documentation for the auto_complete plugin
 doc\:plugins\:gemsonrails=Generate documentation for the gemsonrails plugin
 doc\:plugins\:haml=Generate documentation for the haml plugin
+doc\:plugins\:restful-authentication=Generate documentation for the restful-authentication plugin
 doc\:plugins\:scaffolding=Generate documentation for the scaffolding plugin
 doc\:rails=Build the RDOC HTML Files
 doc\:reapp=Force a rebuild of the RDOC files
@@ -58,7 +62,6 @@ gems\:refresh_specs=Regenerate gem specifications in correct format.
 gems\:unfreeze=Unfreeze/unlink a RubyGem from this Rails application
 gems\:unpack=Unpacks all required gems into vendor/gems.
 gems\:unpack\:dependencies=Unpacks all required gems and their dependencies into vendor/gems.
-import\:kroger=Import from Kroger CSV
 log\:clear=Truncates all *.log files in log/ to zero bytes
 middleware=Prints out your Rack middleware stack
 notes=Enumerate all annotations
