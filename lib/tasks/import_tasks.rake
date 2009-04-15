@@ -20,24 +20,10 @@ namespace :db do
       desc "Import USDA foods and food groups"
       task :usda => :environment do
         puts "Loading usda_food_groups table..."
-        UsdaFoodGroup.transaction do
-          UsdaFoodGroup.destroy_all
-          FasterCSV.foreach("#{RAILS_ROOT}/db/usda_food_groups.csv", :headers => :first_row) do |row|
-            UsdaFoodGroup.create( :name => row["fdgrp_desc"], :fdgrp_cd => row["fdgrp_cd"] )
-          end
-        end
+        UsdaFoodGroup.from_csv_quickly
 
         puts "Loading usda_foods table..."
-        UsdaFood.transaction do
-          UsdaFood.delete_all
-          FasterCSV.foreach("#{RAILS_ROOT}/db/usda_foods.csv", :headers => :first_row) do |row|
-            UsdaFood.create do |uf|
-              #ndb_number fdgrp_cd long_desc short_desc name comname manufacname ref_desc gmwt_1 gmwt_desc1 gmwat_2 gmwt_desc2
-              uf.attributes = row.to_hash
-              uf.usda_food_group = UsdaFoodGroup.find_by_fdgrp_cd(row["fdgrp_cd"])
-            end
-          end
-        end
+        UsdaFood.from_csv_quickly
       end
     end
   end
