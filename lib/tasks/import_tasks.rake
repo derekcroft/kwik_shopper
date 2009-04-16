@@ -20,10 +20,10 @@ namespace :db do
       desc "Import USDA foods and food groups"
       task :usda => :environment do
         puts "Loading usda_food_groups table..."
-        UsdaFoodGroup.from_csv_quickly
+        UsdaFoodGroup.from_csv_easily
 
         puts "Loading usda_foods table..."
-        UsdaFood.from_csv_quickly
+        UsdaFood.from_csv_easily
       end
     end
   end
