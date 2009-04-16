@@ -32,7 +32,7 @@ namespace :db do
           Item.delete_all
           Category.delete_all
           UsdaFood.find(:all).each do |uf|
-            Item.new_from_usda_food(uf)
+            Item.new_or_existing(uf)
           end
         end
       end

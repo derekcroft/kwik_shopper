@@ -4,14 +4,13 @@ class Item < ActiveRecord::Base
   has_and_belongs_to_many :carts
 
   validates_presence_of :category
+  validates_uniqueness_of :name
 
-  def self.new_from_usda_food(uf)
-    Item.new do |i|
-      i.name = uf.search_terms
-      i.description = uf.long_desc
-      i.unit_of_measure = uf.gmwt_desc1
-      i.category = Category.new_or_existing(uf.usda_food_group.name)
-      i.save!
-    end
+  def self.new_or_existing(usda_food)
+    Item.find_by_name(usda_food.search_terms) ||
+      Item.create({ :name => usda_food.search_terms,
+        :description => usda_food.long_desc,
+        :unit_of_measure => usda_food.gmwt_desc1,
+        :category => Category.new_or_existing(usda_food.usda_food_group.name)})
   end
 end
