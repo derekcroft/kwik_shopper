@@ -10,7 +10,7 @@ module CsvEasily
 
     def from_csv_easily
       self.transaction do
-        self.destroy_all
+        self.delete_all
         FasterCSV.foreach(self.csv_file_name, :headers => :first_row) do |row|
           self.create(row.to_hash) { |f| self.csv_easily_block.call(f, row) }
         end

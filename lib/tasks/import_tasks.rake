@@ -25,6 +25,18 @@ namespace :db do
         puts "Loading usda_foods table..."
         UsdaFood.from_csv_easily
       end
-    end
-  end
-end
+
+      desc "Update Aislewalker data from USDA data"
+      task :from_usda => :environment do
+        ActiveRecord::Base.transaction do
+          Item.delete_all
+          Category.delete_all
+          UsdaFood.find(:all).each do |uf|
+            Item.new_from_usda_food(uf)
+          end
+        end
+      end
+      
+    end  # namespace import
+  end  # namespace data
+end  # namespace db
