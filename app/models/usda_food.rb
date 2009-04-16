@@ -1,6 +1,4 @@
 class UsdaFood < ActiveRecord::Base
-  include CsvEasily
-
   belongs_to :usda_food_group
 
   self.csv_easily_block = lambda { |f, row|
