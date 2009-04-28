@@ -90,42 +90,35 @@
 })(jQuery);
 
 
-// event bindings
-var DEFAULT_SEARCH_TEXT = 'Enter a product to search for';
-var DEFAULT_USERNAME_TEXT = 'Username';
+function addDefaultFieldClicks(fields) {
+  jQuery.each(fields, function() {
+    // create variables for values within the hash
+    var defaultValue = this.defaultValue;
 
-function changeDefaultFieldOnFocus(elem, defaultText) {
-  if (elem.value == (defaultText == null ? DEFAULT_SEARCH_TEXT : defaultText)) {
-    elem.value = ''
-  }
+    // add default click and blur behavior to element
+    $(this.selector).click(function() {
+      if (this.value == defaultValue) this.value = '';
+    }).blur(function() {
+      if (this.value == '') this.value = defaultValue;
+    }).val(defaultValue);
+  });
 }
 
-function changeDefaultFieldOnBlur(elem, defaultText) {
-  if (elem.value == '') {
-    elem.value = (defaultText == null ? DEFAULT_SEARCH_TEXT : defaultText)
-  }
+// specify the fields with default behaviors
+var defaultFields = [
+{
+  selector: "#item_name",
+  defaultValue: 'Enter a product to search for'
+},
+{
+  selector: "#username",
+  defaultValue: 'Username'
 }
+];
 
+// main document ready function
 $(document).ready(function() {
-  // add default field functionality to item_name (main search field)
-  searchbox = $("#item_name")
-  searchbox.click(function() {
-    changeDefaultFieldOnFocus(this, DEFAULT_SEARCH_TEXT);
-  });
-  searchbox.blur(function() {
-    changeDefaultFieldOnBlur(this, DEFAULT_SEARCH_TEXT);
-  });
-  searchbox.val(DEFAULT_SEARCH_TEXT);
-
-  // add default field functionality to username field
-  username = $("#username")
-  username.click(function() {
-    changeDefaultFieldOnFocus(this, DEFAULT_USERNAME_TEXT);
-  });
-  username.blur(function() {
-    changeDefaultFieldOnBlur(this, DEFAULT_USERNAME_TEXT);
-  });
-  username.val(DEFAULT_USERNAME_TEXT);
+  addDefaultFieldClicks(defaultFields);
 });
 
 //
