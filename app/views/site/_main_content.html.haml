@@ -5,7 +5,7 @@
     %form{ :action => "#", :onsubmit => "addItemToShoppingCart(); return false;" }
       %fieldset
         %span
-          = text_field_with_auto_complete(:item, :name, :value => "Enter a product to search for", :size => nil, :onfocus => 'changeDefaultFieldOnFocus(this)', :onblur => 'changeDefaultFieldOnBlur(this)')
+          = text_field(:item, :name, :size => nil)
         = link_to_submit_image
 
   .content

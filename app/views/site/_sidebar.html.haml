@@ -1,7 +1,7 @@
 #sidebar
   #login
     - form_tag(:controller => "sessions", :action => "create", :method => :post) do
-      = text_field_tag("username", "Username", :onfocus => 'changeDefaultFieldOnFocus(this, "Username")', :onblur => 'changeDefaultFieldOnBlur(this, "Username")')
+      = text_field_tag("username")
       = password_field_tag("password", "password", :onfocus => "this.value = ''")
       = image_submit_tag("login-submit.png", :class => "login-btn")
     #login-links
